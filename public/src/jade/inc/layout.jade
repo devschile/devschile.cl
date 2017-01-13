@@ -1,0 +1,25 @@
+doctype html
+html(lang='es')
+	block vars
+head
+	meta(charset='UTF-8')
+	meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+	title #{pageTitle}
+	meta(name='description', content='')
+	meta(name='viewport', content='width=device-width,initial-scale=1')
+	block wHead
+	if !defaultConfig
+		link(rel='stylesheet', href='assets/css/style.css')
+	else 
+		link(rel='stylesheet', href="#{defaultConfig.rootCSS}main.css")
+body
+	<!--[if lte IE 8]>
+	p.browserupgrade You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+	<![endif]-->
+	block wBody
+	block wScripts
+	if !defaultConfig
+		+loadJQuery('1.11.3')
+		script(src='assets/js/functions.js')
+	else
+		script(type="text/javascript", src="#{defaultConfig.rootJS}libs/jquery.js")

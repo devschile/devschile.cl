@@ -1,0 +1,83 @@
+include inc/mixins
+include inc/variables
+
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+
+    title #{pageTitle} - #{slogan}
+    meta(name='description', content='#{slogan}')
+
+    link(rel='stylesheet', type='text/css', href='//fonts.googleapis.com/css?family=Fira+Sans')
+    link(rel='stylesheet', type='text/css', href='//fonts.googleapis.com/css?family=Inconsolata:400,700')
+    link(rel='stylesheet', type='text/css', href='assets/css/libs.css')
+    link(rel='stylesheet', type='text/css', href='//cdn.rawgit.com/mutable-tools/MutaGrid/master/demo/mutagrid/dist/12/mutagrid.min.css')
+    link(rel='stylesheet', type='text/css', href='assets/css/huemul.css')
+
+  body
+    main.container
+
+      .row
+        .column-12.column-center.text-center
+          h1 #{pageTitle}
+          #title
+            h2.typewrite #{slogan}
+          hr
+          .box-btn_inscribete
+            button.btn(onclick="javascript:openModal();") ¡Únete!
+
+      .row
+        .column-5
+          .text-center
+            include inc/ascii-slack.jade
+        .column-4.column-push-2.gutter-top-xsmall
+          .vertical-centered-text.vertical-middle
+            p <b>devsChile</b> es más que un grupo de Slack; es una comunidad de diseñadores y desarrolladores web que se juntan a comentar, ayudar, sugerir y reclamar de su día-a-día. Canales como <b>#backend</b>, <b>#cultura</b>, <b>#frontend</b>, <b>#lifehacks</b>, <b>#pegas</b>, <b>#ux</b> y por supuesto <b>#random</b> son algunos de los que puedes ingresar, aportar y hasta procrastinar un rato mientras dure tu <i>Pomodoro</i>.
+
+      .row
+        .column-4.column-push-2.gutter-top-xsmall
+          .vertical-centered-text.vertical-tall
+            p <b>devsChile</b> hospeda a los organizadores del famoso evento mensual <b>BeerJS Santiago</b>, y sus usuarios siempre son privilegiados con el primer anuncio oficial de una nueva edición y de poder inscribirse 1 dia antes que por otros medios (<a href="http://www.beerjs.cl/">BeerJS</a>).
+
+        .column-5.column-push-2
+          .text-center
+            include inc/ascii-beerjs.jade
+          
+      hr
+      .row.text-center
+        .column-2
+        .column-3
+          h3
+            span Stickers!
+          p 
+            | Tenemos <a href="#" onclick="javascript:openModalSticker();">stickers de nuestro bot Huemul</a> para que puedas lucirlo en tus dispositivos. Lleva 3 por US$5, envío postal incluído.
+          form.box-donation(action='https://www.paypal.com/cgi-bin/webscr', method='post', target='_top')
+            input(type='hidden', name='cmd', value='_s-xclick')
+            input(type='hidden', name='hosted_button_id', value='FHLDNWJM3XKGU')
+            input(type='image', src='https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif', border='0', name='submit', alt='PayPal - The safer, easier way to pay online!')
+            img(alt='', border='0', src='https://www.paypalobjects.com/en_US/i/scr/pixel.gif', width='1', height='1')
+        .column-2
+        .column-3
+          h3
+            span ¡Dona!
+          p 
+            | Tu donativo de US$7 irá en directa mantención de una cuenta Heroku para nuestro bot huemul. Incluye 3 stickers.
+          form.box-donation(action='https://www.paypal.com/cgi-bin/webscr', method='post', target='_top')
+            input(type='hidden', name='cmd', value='_s-xclick')
+            input(type='hidden', name='hosted_button_id', value='BAS3GCERCZLLU')
+            input(type='image', src='https://www.paypalobjects.com/es_ES/ES/i/btn/btn_donateCC_LG.gif', border='0', name='submit', alt='PayPal. La forma rápida y segura de pagar en Internet.')
+            img(alt='', border='0', src='https://www.paypalobjects.com/en_US/i/scr/pixel.gif', width='1', height='1')
+          .column-2
+
+    aside#unete.tinymodal-window
+      iframe#heroku-unete(src='http://devschile-unete.herokuapp.com/', frameborder='0')
+    aside#sticker.tinymodal-window.text-center
+      img(src='http://i.imgur.com/KfAx4Mx.jpg', alt='Sticker Huemul', style='max-height: 100%')
+
+
+    script(src='assets/js/libs.js')
+    script(src='assets/js/huemul.js')
+
+    include inc/analytics.jade

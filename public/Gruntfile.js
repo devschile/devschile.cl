@@ -154,7 +154,8 @@ module.exports = function(grunt) {
     }
   });
   grunt.registerTask("init", ["bowercopy"]);
-  grunt.registerTask("default", ["newer:uglify","concat","sprite","newer:jade","newer:imagemin","nsass","watch"]);
+  // grunt.registerTask("default", ["newer:uglify","concat","sprite","newer:jade","newer:imagemin","sass","watch"]);
+  grunt.registerTask("default", ["newer:uglify","concat","newer:jade","newer:imagemin","sass"]);
   grunt.registerTask("testjs", ["jshint"]);
   grunt.registerTask("testhtml", ["htmlhint"]);
 };

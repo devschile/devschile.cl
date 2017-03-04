@@ -1,3 +1,5 @@
+/*jshint unused:false */
+
 // huemul sticker modal
 function openModal() {
   tinyModal.openModal("#unete", function(){
@@ -13,7 +15,7 @@ function openModalSticker() {
 // Type Writter fx
 // slogan
 TypeWritter.start({
-  containerId: 'title',
-  extractClass: 'typewrite',
-  cursorClass: 'cursor'
+  containerId: "title",
+  extractClass: "typewrite",
+  cursorClass: "cursor"
 });

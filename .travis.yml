@@ -1,6 +1,8 @@
 language: node_js
 node_js:
 - node
+notifications:
+  email: false
 addons:
   ssh_known_hosts:
   - github.com
@@ -13,9 +15,9 @@ install:
 - bower install
 after_success:
 - cd ..
-- test $TRAVIS_SECURE_ENV_VARS == "true" && openssl aes-256-cbc -K $encrypted_1495c74e237e_key -iv $encrypted_1495c74e237e_iv
+- \[ "$TRAVIS_SECURE_ENV_VARS" = true \] && openssl aes-256-cbc -K $encrypted_1495c74e237e_key -iv $encrypted_1495c74e237e_iv
   -in deploy_key.pem.enc -out deploy_key.pem -d
-- test $TRAVIS_SECURE_ENV_VARS == "true"
+- \[ "$TRAVIS_SECURE_ENV_VARS" = true \]
   && eval "$(ssh-agent -s)"
   && chmod 600 deploy_key.pem
   && ssh-add deploy_key.pem

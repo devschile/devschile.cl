@@ -13,13 +13,15 @@ install:
 - npm install -g bower
 - npm install
 - bower install
-after_success:
+before_deploy:
 - grunt
 - cd ..
-- \[ "$TRAVIS_SECURE_ENV_VARS" = true \] && openssl aes-256-cbc -K $encrypted_1495c74e237e_key -iv $encrypted_1495c74e237e_iv
-  -in deploy_key.pem.enc -out deploy_key.pem -d
-- \[ "$TRAVIS_SECURE_ENV_VARS" = true \]
-  && eval "$(ssh-agent -s)"
-  && chmod 600 deploy_key.pem
-  && ssh-add deploy_key.pem
-  && rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/public/dist/. static@104.131.105.95:~/sites/devschile.cl
+- openssl aes-256-cbc -K $encrypted_1495c74e237e_key -iv $encrypted_1495c74e237e_iv -in deploy_key.pem.enc -out deploy_key.pem -d
+- eval "$(ssh-agent -s)"
+- chmod 600 deploy_key.pem
+- ssh-add deploy_key.pem
+deploy:
+  provider: script
+  script: git remote add dokku dokku@104.131.105.95:huemul && git push dokku master
+  on:
+    branch: master

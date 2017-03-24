@@ -19,3 +19,8 @@ TypeWritter.start({
   extractClass: "typewrite",
   cursorClass: "cursor"
 });
+TypeWritter.start({
+  containerId: "subtitle",
+  extractClass: "typewrite",
+  cursorClass: "cursor"
+});

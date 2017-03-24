@@ -125,3 +125,24 @@ hr {
     max-width: 1024px;
   }
 }
+
+
+.box-person {
+
+  .box-avatar {
+
+    .avatar {
+      max-width: 50%;
+      border-radius: 50%;
+      border: 5px solid $font;
+      background-color: #fff;
+    }
+  }
+
+  .box-testimony {
+    
+    .who {
+      font-weight: bold;
+    }
+  }
+}

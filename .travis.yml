@@ -22,6 +22,6 @@ before_deploy:
 - ssh-add deploy_key.pem
 deploy:
   provider: script
-  script: git remote add dokku dokku@104.131.105.95:huemul && git push dokku master
+  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/public/dist/. static@104.131.105.95:~/sites/devschile.cl
   on:
     branch: master

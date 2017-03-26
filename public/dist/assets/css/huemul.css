@@ -135,3 +135,6 @@ hr {
 
 .box-person .box-testimony .who {
   font-weight: bold; }
+
+.box-person .-hidden {
+  display: none; }

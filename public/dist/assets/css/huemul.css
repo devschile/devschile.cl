@@ -38,7 +38,6 @@ html {
 
 body {
   background: #100a1c;
-  background-image: -webkit-radial-gradient(50% 30% ellipse at center top, #201e40 0%, transparent 100%), -webkit-radial-gradient(60% 50% ellipse at center bottom, #261226 0%, #100a1c 100%);
   background-image: radial-gradient(50% 30% ellipse at center top, #201e40 0%, transparent 100%), radial-gradient(60% 50% ellipse at center bottom, #261226 0%, #100a1c 100%);
   background-attachment: fixed;
   color: #ddd;
@@ -127,3 +126,15 @@ hr {
 @media (min-width: 1280px) {
   .container {
     max-width: 1024px; } }
+
+.box-person .box-avatar .avatar {
+  max-width: 50%;
+  border-radius: 50%;
+  border: 5px solid #ddd;
+  background-color: #fff; }
+
+.box-person .box-testimony .who {
+  font-weight: bold; }
+
+.box-person .-hidden {
+  display: none; }

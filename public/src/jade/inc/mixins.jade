@@ -1,0 +1,6 @@
+mixin testimony(who, avatar, phrase)
+  .box-person.column-3
+    .box-avatar
+      img.avatar(src="#{avatar}" alt="#{who}")
+    .box-testimony
+      p.textimony <span class="who">#{who}</span>: <i>"#{phrase}"</i>

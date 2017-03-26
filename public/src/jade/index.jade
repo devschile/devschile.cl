@@ -35,7 +35,7 @@ html
         .column-4.column-push-2.gutter-top-xsmall
           .vertical-centered-text.vertical-middle
             p <b>devsChile</b> es más que un grupo de Slack; es una comunidad de diseñadores y desarrolladores web que se juntan a comentar, ayudar, sugerir y reclamar de su día-a-día. Canales como <b>#backend</b>, <b>#cultura</b>, <b>#frontend</b>, <b>#lifehacks</b>, <b>#pegas</b>, <b>#ux</b> y por supuesto <b>#random</b> son algunos de los que puedes ingresar, aportar y hasta procrastinar un rato mientras dure tu <i>Pomodoro</i>.
-
+      hr
       .row
         .column-4.column-push-2.gutter-top-xsmall
           .vertical-centered-text.vertical-tall
@@ -44,7 +44,8 @@ html
         .column-5.column-push-2
           .text-center
             include inc/ascii-beerjs.jade
-
+      
+      hr
       .row
         .column-5
           .text-center
@@ -60,7 +61,7 @@ html
           h3
             span Stickers!
           p 
-            | Tenemos <a href="#" onclick="javascript:openModalSticker();">stickers de nuestro bot Huemul</a> para que puedas lucirlo en tus dispositivos. Lleva 3 por US$5, envío postal incluído.
+            | Tenemos <a href="#" onclick="javascript:openModalSticker();">stickers de nuestro bot Huemul</a> para que puedas lucirlo en tus dispositivos. Lleva 2 por US$5, envío postal incluído.
           form.box-donation(action='https://www.paypal.com/cgi-bin/webscr', method='post', target='_top')
             input(type='hidden', name='cmd', value='_s-xclick')
             input(type='hidden', name='hosted_button_id', value='FHLDNWJM3XKGU')
@@ -71,13 +72,29 @@ html
           h3
             span ¡Dona!
           p 
-            | Tu donativo de US$7 irá en directa mantención de una cuenta Heroku para nuestro bot huemul. Incluye 3 stickers.
+            | Tu donativo de US$7 irá en directa mantención de una cuenta DigitalOcean para nuestro bot Huemul. Incluye 3 stickers.
           form.box-donation(action='https://www.paypal.com/cgi-bin/webscr', method='post', target='_top')
             input(type='hidden', name='cmd', value='_s-xclick')
             input(type='hidden', name='hosted_button_id', value='BAS3GCERCZLLU')
             input(type='image', src='https://www.paypalobjects.com/es_ES/ES/i/btn/btn_donateCC_LG.gif', border='0', name='submit', alt='PayPal. La forma rápida y segura de pagar en Internet.')
             img(alt='', border='0', src='https://www.paypalobjects.com/en_US/i/scr/pixel.gif', width='1', height='1')
           .column-2
+
+       hr
+      .row
+        .column-12.column-center.text-center
+          #subtitle
+            h1.typewrite Testimonios:
+        .column-12.column-center.text-center.gutter-top
+          +testimony('@pinceleart',' https://ca.slack-edge.com/T0R6F3YAX-U0R6DCC68-5d236d4f5651-512', 'nadie admite salir con un diseñador')
+          +testimony('@gmq','https://ca.slack-edge.com/T0R6F3YAX-U0R6H0HQD-g494a30a9e8a-512', 'para que sirve el bolsillo del pijama')
+          +testimony('@alvaroveliz','https://ca.slack-edge.com/T0R6F3YAX-U0RA5HM8R-d02591d05d56-512', 'los feos salimos en la radio')
+          +testimony('@livercake','https://ca.slack-edge.com/T0R6F3YAX-U39HX7UVD-g2152beb7e16-512', 'no te podemos pagar tanto ahora, pero cuando nos compre google…')
+          +testimony('@jorgeepunan','https://ca.slack-edge.com/T0R6F3YAX-U0R6AKR0Q-ebb247a85fbf-512', 'DevpressionChile')
+          +testimony('@hector','https://ca.slack-edge.com/T0R6F3YAX-U0R6E17PC-gbbd25763739-512', 'sólo explotan niños en países donde no podemos pronunciar sus capitales, es casi como si no sucediera')
+          +testimony('@alvaroveliz','https://ca.slack-edge.com/T0R6F3YAX-U0RA5HM8R-d02591d05d56-512', 'tengo más sueño que martin luther king')
+          +testimony('@orock','https://ca.slack-edge.com/T0R6F3YAX-U0S6JCGB1-58859a3f2540-512', 'wn dejate de llorar, ganas como diputado')
+
 
     aside#unete.tinymodal-window
       iframe#heroku-unete(src='http://devschile-unete.herokuapp.com/', frameborder='0')

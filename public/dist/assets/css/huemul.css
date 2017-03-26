@@ -120,8 +120,10 @@ hr {
     display: table-cell;
     vertical-align: middle; }
 
-.tinymodal-active .tinymodal-window-open img {
-  max-width: 100%; }
+.tinymodal-active .tinymodal-window-open {
+  position: fixed; }
+  .tinymodal-active .tinymodal-window-open img {
+    max-width: 100%; }
 
 @media (min-width: 1280px) {
   .container {

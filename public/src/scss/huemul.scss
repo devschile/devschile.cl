@@ -114,7 +114,8 @@ hr {
 }
 
 .tinymodal-active .tinymodal-window-open {
-
+  position: fixed;
+  
   img {
     max-width: 100%;
   }

@@ -1,18 +1,19 @@
 /*jshint unused:false */
 
-(function() {
+// huemul sticker modal
+function openModal() {
+  tinyModal.openModal("#unete", function() {
+    document.querySelector("#heroku-unete").contentWindow.setTimeout("this.scrollTo(0, 200);",1);
+  });
+}
 
-  // huemul sticker modal
-  function openModal() {
-    tinyModal.openModal("#unete", function() {
-      document.querySelector("#heroku-unete").contentWindow.setTimeout("this.scrollTo(0, 200);",1);
-    });
-  }
-  function openModalSticker() {
-    tinyModal.openModal("#sticker", function() {
-      document.querySelector("#btn-sticker");
-    });
-  }
+function openModalSticker() {
+  tinyModal.openModal("#sticker", function() {
+    document.querySelector("#btn-sticker");
+  });
+}
+
+(function() {
 
   // typewritter fx
   // slogan y subtitulo

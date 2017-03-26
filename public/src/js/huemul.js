@@ -31,15 +31,19 @@
     // shuffle different numbers: http://stackoverflow.com/a/25984542/2148418
   function numberArray(a,b) {
     b = [];
-    while (a--) b[a] = a;
-    return b
+    while (a--) {
+      b[a] = a;
+    }
+    return b;
   }
   function randomize(a,b,c,d) {
     c = a.length;
-    while(c) b = Math.random() * (--c+1)|0,d=a[c],a[c]=a[b],a[b]=d
+    while(c) {
+      b = Math.random() * (--c+1)|0,d=a[c],a[c]=a[b],a[b]=d;
+    }
   }
 
-  var testimonios = document.querySelectorAll('.box-person');
+  var testimonios = document.querySelectorAll(".box-person");
   var maxElems = 8;
   var rand = numberArray(maxElems);
   // apply

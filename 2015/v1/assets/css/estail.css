@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 html {
   background: #100a1c;
   background-image: -webkit-radial-gradient(50% 30% ellipse at center top, #201e40 0%, rgba(0, 0, 0, 0) 100%), -webkit-radial-gradient(60% 50% ellipse at center bottom, #261226 0%, #100a1c 100%);
@@ -27,9 +30,19 @@ h1 {
   -webkit-text-fill-color: transparent;
   color: #8c5059;
   font-weight: 400;
-  margin: 0 auto 6em;
+  margin: 0 auto 4em;
 }
 
+.box-donation {
+  margin: 4em auto 1em;
+}
+.box-donation .legend {
+  font-size: .8em;
+}
+
+a {
+  color: #ccc;
+}
 
 button {
   border: 0;
@@ -81,7 +94,15 @@ button:focus::after {
   width: 600px;
 }
 
-
+.row {
+  overflow: hidden;
+  padding: 0 15px;
+}
+.box-payments {
+  float: left;
+  width: 50%;
+  padding: 0 15px;
+}
 
 /* Animations */
 /* Values that appear onclick */
@@ -228,5 +249,11 @@ button:focus::after {
 
   button {
     margin: 0.5em;
+  }
+}
+@media (max-width: 719px) {
+  .box-payments {
+    float: none;
+    width: 100%;
   }
 }

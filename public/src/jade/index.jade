@@ -9,6 +9,7 @@ html
 
     title #{pageTitle} - #{slogan}
     meta(name='description', content='#{slogan}')
+    link(href='favicon.ico', rel='icon', type='image/x-icon')
 
     link(rel='stylesheet', type='text/css', href='//fonts.googleapis.com/css?family=Fira+Sans')
     link(rel='stylesheet', type='text/css', href='//fonts.googleapis.com/css?family=Inconsolata:400,700')
@@ -94,7 +95,10 @@ html
           +testimony('@hector','https://ca.slack-edge.com/T0R6F3YAX-U0R6E17PC-gbbd25763739-512', 'sólo explotan niños en países donde no podemos pronunciar sus capitales, es casi como si no sucediera')
           +testimony('@alvaroveliz','https://ca.slack-edge.com/T0R6F3YAX-U0RA5HM8R-d02591d05d56-512', 'tengo más sueño que martin luther king')
           +testimony('@orock','https://ca.slack-edge.com/T0R6F3YAX-U0S6JCGB1-58859a3f2540-512', 'wn dejate de llorar, ganas como diputado')
-
+      hr
+      .row
+        .column-12.column-center.text-center
+          ©Copyright 2017 DevsChile Core Team. License: <a href="https://gist.githubusercontent.com/juanbrujo/36fa4d629b49f900252e/raw/d383b5bef4c99f038f2b1305a7d1f592b6f64a2d/DWTFYWTPL" target="_blank">DWTFYWTPL</a>.
 
     aside#unete.tinymodal-window
       iframe#heroku-unete(src='http://devschile-unete.herokuapp.com/', frameborder='0')

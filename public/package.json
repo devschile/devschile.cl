@@ -15,7 +15,7 @@
     "grunt-bowercopy": "^1.2.0",
     "grunt-cli": "^1.2.0",
     "grunt-contrib-concat": "^0.5.1",
-    "grunt-contrib-imagemin": "^0.9.4",
+    "grunt-contrib-imagemin": "^1.0.1",
     "grunt-contrib-jade": "^0.14.1",
     "grunt-contrib-jshint": "^0.11.2",
     "grunt-contrib-nodeunit": "^0.4.1",

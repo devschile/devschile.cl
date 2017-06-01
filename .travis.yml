@@ -21,6 +21,7 @@ before_deploy:
 - chmod 600 deploy_key.pem
 - ssh-add deploy_key.pem
 deploy:
+  skip_cleanup: true
   provider: script
   script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/public/dist/. static@104.131.105.95:~/sites/devschile.cl
   on:

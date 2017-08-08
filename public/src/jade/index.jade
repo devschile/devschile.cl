@@ -57,7 +57,7 @@ html
           
       hr
       .row.text-center
-        .column-2
+        .column-1
         .column-3
           h3
             span Stickers!
@@ -68,7 +68,7 @@ html
             input(type='hidden', name='hosted_button_id', value='FHLDNWJM3XKGU')
             input(type='image', src='https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif', border='0', name='submit', alt='PayPal - The safer, easier way to pay online!')
             img(alt='', border='0', src='https://www.paypalobjects.com/en_US/i/scr/pixel.gif', width='1', height='1')
-        .column-2
+        .column-1
         .column-3
           h3
             span ¡Dona!
@@ -79,7 +79,20 @@ html
             input(type='hidden', name='hosted_button_id', value='BAS3GCERCZLLU')
             input(type='image', src='https://www.paypalobjects.com/es_ES/ES/i/btn/btn_donateCC_LG.gif', border='0', name='submit', alt='PayPal. La forma rápida y segura de pagar en Internet.')
             img(alt='', border='0', src='https://www.paypalobjects.com/en_US/i/scr/pixel.gif', width='1', height='1')
-          .column-2
+        .column-1
+        .column-3
+          h3
+            span Impuesto Huemul
+          p 
+            | Cualquier transacción dentro de devsChile merece un pago voluntario por impuesto de timbres y estampillas al bot <img src="https://emoji.slack-edge.com/T0R6F3YAX/huemul/8eea7517e45d75e6.png" width="18">
+          form.box-donation(action='https://www.paypal.com/cgi-bin/webscr', method='post', target='_top')
+            input(type='hidden', name='business', value='juanbrujo@gmail.com')
+            input(type='hidden', name='cmd', value='_donations')
+            input(type='hidden', name='item_name', value='devsChile')
+            input(type='hidden', name='item_number', value='Impuesto Huemul')
+            input(type='hidden', name='currency_code', value='USD')
+            input(type='image', name='submit', src='https://www.paypalobjects.com/es_ES/ES/i/btn/btn_donateCC_LG.gif', alt='Pagar el impuesto')
+            img(alt='', width='1', height='1', src='https://www.paypalobjects.com/en_US/i/scr/pixel.gif')
 
        hr
       .row
@@ -98,7 +111,7 @@ html
       hr
       .row
         .column-12.column-center.text-center
-          ©Copyright 2017 DevsChile Core Team. License: <a href="https://gist.githubusercontent.com/juanbrujo/36fa4d629b49f900252e/raw/d383b5bef4c99f038f2b1305a7d1f592b6f64a2d/DWTFYWTPL" target="_blank">DWTFYWTPL</a>.
+          © Copyright 2017 DevsChile Core Team. License: <a href="https://gist.githubusercontent.com/juanbrujo/36fa4d629b49f900252e/raw/d383b5bef4c99f038f2b1305a7d1f592b6f64a2d/DWTFYWTPL" target="_blank">DWTFYWTPL</a>.
 
     aside#unete.tinymodal-window
       iframe#heroku-unete(src='http://devschile-unete.herokuapp.com/', frameborder='0')

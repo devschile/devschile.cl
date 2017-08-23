@@ -44,54 +44,21 @@ html
         .column-5.column-push-2
           .text-center
             include inc/ascii-beerjs.jade
-      
-      hr
-      .row
-        .column-5
-          .text-center
-            include inc/ascii-huemul.jade
-        .column-4.column-push-2.gutter-top-xsmall
-          .vertical-centered-text.vertical-middle
-            p Tenemos al mejor <i>Hubot</i> de todos los Slacks. <a href="https://github.com/devschile/huemul">Huemul</a> nos acompaña todos los días y su grupo de apoyo no se cansa de hacerle mejoras. Únete y conócelo, crea nuevas funcionalidades y apóyanos en su desarrollo en el canal <a href="http://devschile.slack.com/messages/huemul-devs">#huemul-devs</a>.
-          
+
       hr
       .row.text-center
-        .column-1
         .column-3
-          h3
-            span ¡Stickers!
-          p 
-            | Tenemos <a href="#" onclick="javascript:openModalSticker();return false;">stickers de nuestro bot <img src="https://emoji.slack-edge.com/T0R6F3YAX/huemul/8eea7517e45d75e6.png" width="18"></a> para que puedas lucirlos en tus dispositivos. Lleva 2 por US$6, envío postal incluído.
-          form.box-donation(action='https://www.paypal.com/cgi-bin/webscr', method='post', target='_top')
-            input(type='hidden', name='cmd', value='_s-xclick')
-            input(type='hidden', name='hosted_button_id', value='FHLDNWJM3XKGU')
-            input(type='image', src='https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif', border='0', name='submit', alt='PayPal - The safer, easier way to pay online!')
-            img(alt='', border='0', src='https://www.paypalobjects.com/en_US/i/scr/pixel.gif', width='1', height='1')
-        .column-1
-        .column-3
+        .column-6
           h3
             span ¡Dona!
           p 
-            | Tu donativo de US$10 irá en directa mantención de una cuenta Digital Ocean para nuestro bot <img src="https://emoji.slack-edge.com/T0R6F3YAX/huemul/8eea7517e45d75e6.png" width="18">. Además de 3 stickers, te hará golden <img src="https://emoji.slack-edge.com/T0R6F3YAX/monea/3eff7e75a7a5e8b4.png" title="gold"> por <b>2 meses</b>.
+            | Tu donativo de US$10 irá en directa mantención de una cuenta Digital Ocean para nuestro bot. Además de 3 stickers, te hará golden <img src="https://emoji.slack-edge.com/T0R6F3YAX/monea/3eff7e75a7a5e8b4.png" alt="Golden" title="gold"> por <b>2 meses</b>.
           form.box-donation(action='https://www.paypal.com/cgi-bin/webscr', method='post', target='_top')
             input(type='hidden', name='cmd', value='_s-xclick')
             input(type='hidden', name='hosted_button_id', value='BAS3GCERCZLLU')
             input(type='image', src='https://www.paypalobjects.com/es_ES/ES/i/btn/btn_donateCC_LG.gif', border='0', name='submit', alt='PayPal. La forma rápida y segura de pagar en Internet.')
             img(alt='', border='0', src='https://www.paypalobjects.com/en_US/i/scr/pixel.gif', width='1', height='1')
-        .column-1
         .column-3
-          h3
-            span Impuesto Huemul
-          p Cualquier transacción dentro de devsChile merece un pago voluntario por impuesto de timbres y estampillas al bot <img src="https://emoji.slack-edge.com/T0R6F3YAX/huemul/8eea7517e45d75e6.png" width="18">
-          form(action='https://www.paypal.com/cgi-bin/webscr', method='post')
-            input(type='hidden', name='business', value='juanbrujo@gmail.com')
-            input(type='hidden', name='cmd', value='_donations')
-            input(type='hidden', name='item_name', value='devsChile')
-            input(type='hidden', name='item_number', value='Impuesto Huemul')
-            input(type='hidden', name='currency_code', value='USD')
-            input(type='image', name='submit', src='https://www.paypalobjects.com/es_ES/ES/i/btn/btn_donateCC_LG.gif', alt='Pagar el impuesto')
-            img(alt='', width='1', height='1', src='https://www.paypalobjects.com/en_US/i/scr/pixel.gif')
-
        hr
       .row
         .column-12.column-center.text-center
@@ -110,9 +77,6 @@ html
 
     aside#unete.tinymodal-window
       iframe#heroku-unete(src='http://devschile-unete.herokuapp.com/', frameborder='0')
-    aside#sticker.tinymodal-window.text-center
-      img(src='http://i.imgur.com/KfAx4Mx.jpg', alt='Sticker Huemul', style='max-height: 100%')
-
 
     script(src='assets/js/libs.js')
     script(src='assets/js/huemul.js')

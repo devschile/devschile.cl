@@ -13,6 +13,12 @@ function openModalSticker() {
   });
 }
 
+function openModalStickerNew() {
+  tinyModal.openModal("#sticker_new", function() {
+    document.querySelector("#btn-sticker");
+  });
+}
+
 (function() {
   // print huemul in console
   /* jshint ignore:start */

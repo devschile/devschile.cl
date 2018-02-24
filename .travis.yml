@@ -6,7 +6,7 @@ notifications:
 addons:
   ssh_known_hosts:
   - github.com
-  - 104.131.105.95
+  - devschile.cl
 before_deploy:
 - openssl aes-256-cbc -K $encrypted_1495c74e237e_key -iv $encrypted_1495c74e237e_iv -in deploy_key.pem.enc -out deploy_key.pem -d
 - eval "$(ssh-agent -s)"
@@ -16,7 +16,7 @@ script:
 - echo 'No tests'
 deploy:
   provider: script
-  script: git remote add dokku dokku@104.131.105.95:devschile.cl && git push dokku master
+  script: git remote add dokku dokku@devschile.cl:devschile.cl && git push dokku master
   skip_cleanup: true
   on:
     branch: master

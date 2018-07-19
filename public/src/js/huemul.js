@@ -41,7 +41,7 @@ function openModalStickerNew() {
   });
 
   // testimonios / random
-    // shuffle different numbers: http://stackoverflow.com/a/25984542/2148418
+  // shuffle different numbers: http://stackoverflow.com/a/25984542/2148418
   function numberArray(a,b) {
     b = [];
     while (a--) {
@@ -57,12 +57,14 @@ function openModalStickerNew() {
   }
 
   var testimonios = document.querySelectorAll(".box-person");
-  var maxElems = testimonios.length;
-  var rand = numberArray(maxElems);
+  var totalElems = testimonios.length;
+  var maxElems = 4;
+  var hiddenElems = totalElems - maxElems;
+  var rand = numberArray(totalElems);
   // apply
   randomize(rand);
-
-  [].forEach.call(rand.slice(0,4), function(i) {
+  
+  [].forEach.call(rand.slice(0, hiddenElems), function(i) {
     testimonios[i].classList.add("-hidden");
   });
 

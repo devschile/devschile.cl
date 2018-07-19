@@ -57,7 +57,7 @@ function openModalStickerNew() {
   }
 
   var testimonios = document.querySelectorAll(".box-person");
-  var maxElems = 8;
+  var maxElems = testimonios.length;
   var rand = numberArray(maxElems);
   // apply
   randomize(rand);

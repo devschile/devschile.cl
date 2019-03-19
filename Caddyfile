@@ -1,5 +1,5 @@
 0.0.0.0:5000
-root /var/www/html/dist
+root /var/www/html
 gzip
 log stdout
 errors stdout

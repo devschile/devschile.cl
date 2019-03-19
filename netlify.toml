@@ -1,0 +1,4 @@
+[build]
+  base    = "public"
+  command = "grunt"
+  publish = "public/dist"

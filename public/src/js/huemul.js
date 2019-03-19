@@ -63,7 +63,7 @@ function openModalStickerNew() {
   var rand = numberArray(totalElems);
   // apply
   randomize(rand);
-  
+
   [].forEach.call(rand.slice(0, hiddenElems), function(i) {
     testimonios[i].classList.add("-hidden");
   });

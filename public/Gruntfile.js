@@ -76,7 +76,7 @@ module.exports = function(grunt) {
         files: [{
             expand: true,
             cwd: "src/images/",
-            src: ["*.{png,jpg,gif,svg}"],
+            src: ["*.{png,jpg,gif,svg,ico}"],
             dest: "dist/assets/images/"
         }]
       }
@@ -97,7 +97,7 @@ module.exports = function(grunt) {
         },
         files: [{
           cwd: "src/jade",
-          src: ["*.jade", "coc/*.jade"],
+          src: ["*.jade", "coc/*.jade", "inc/ascii-*.jade"],
           dest: "dist",
           expand: true,
           ext: ".html"

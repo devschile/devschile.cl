@@ -10,6 +10,8 @@ html
     title #{pageTitle} - #{slogan}
     meta(name='description', content='#{slogan}')
 
+    link(href='assets/images/favicon.ico', rel='icon', type='image/x-icon')
+
     link(rel='stylesheet', type='text/css', href='//fonts.googleapis.com/css?family=Fira+Sans')
     link(rel='stylesheet', type='text/css', href='//fonts.googleapis.com/css?family=Inconsolata:400,700')
     link(rel='stylesheet', type='text/css', href='assets/css/libs.css')
@@ -26,7 +28,7 @@ html
             h2.typewrite #{slogan}
           hr
           .box-btn_inscribete
-            a(href='mailto:salud@beerjs.cl', class='btn') Para unirte escribe a salud@beerjs.cl y te enviamos la invitación por email
+            button.btn(onclick="javascript:openModal();return false;") ¡Únete!
 
       .row
         .column-5
@@ -39,7 +41,7 @@ html
       .row
         .column-4.column-push-2.gutter-top-xsmall
           .vertical-centered-text.vertical-tall
-            p <b>devsChile</b> hospeda a los organizadores del famoso evento mensual <b>BeerJS Santiago</b> y <b>BeerJS Valdivia</b>, y sus usuarios siempre son privilegiados con el primer anuncio oficial de una nueva edición y de poder inscribirse 1 dia antes que por otros medios (<a href="http://www.beerjs.cl/">BeerJS</a>).
+            p <b>devsChile</b> hospeda a los organizadores del famoso evento mensual <b>BeerJS Santiago</b> y <b>BeerJS Valdivia</b>, y sus usuarios siempre son privilegiados con el primer anuncio oficial de una nueva edición y de poder inscribirse 1 dia antes que por otros medios (<a href="https://www.beerjs.cl/">BeerJS</a>).
 
         .column-5.column-push-2
           .text-center
@@ -52,7 +54,7 @@ html
             include inc/ascii-huemul.jade
         .column-4.column-push-2.gutter-top-xsmall
           .vertical-centered-text.vertical-middle
-            p Tenemos al mejor <i>Hubot</i> de todos los Slacks. <a href="https://github.com/devschile/huemul">Huemul</a> nos acompaña todos los días y su grupo de apoyo no se cansa de hacerle mejoras. Únete y conócelo, crea nuevas funcionalidades y apóyanos en su desarrollo en el canal <a href="http://devschile.slack.com/messages/huemul-devs">#huemul-devs</a>.
+            p Tenemos al mejor <i>Hubot</i> de todos los Slacks. <a href="https://github.com/devschile/huemul">Huemul</a> nos acompaña todos los días y su grupo de apoyo no se cansa de hacerle mejoras. Únete y conócelo, crea nuevas funcionalidades y apóyanos en su desarrollo en el canal <a href="https://devschile.slack.com/messages/huemul-devs">#huemul-devs</a>.
 
       hr
       .row.text-center
@@ -61,8 +63,7 @@ html
           h3
             span ¡Stickers!
           p
-            | Tenemos <a href="#" onclick="javascript:openModalSticker();return false;">stickers de nuestro bot <img src="https://emoji.slack-edge.com/T0R6F3YAX/huemul/8eea7517e45d75e6.png" width="18"></a> para que puedas lucirlos en tus dispositivos. Lleva 2 por US$6, envío postal incluído.
-          p <b>¡Nuevos!</b> Stickers <a href="#" onclick="javascript:openModalStickerNew();return false;">:guemul: :fake: :monea:</a>.
+            | Tenemos <a href="#" onclick="javascript:openModalSticker();return false;">stickers de nuestro bot <img src="https://emoji.slack-edge.com/T0R6F3YAX/devschile/451c6509496ff3b9.png" width="20"></a> para que puedas lucirlos en tus dispositivos. Lleva 2 por US$6, envío postal incluído.
           form.box-donation(action='https://www.paypal.com/cgi-bin/webscr', method='post', target='_top')
             input(type='hidden', name='cmd', value='_s-xclick')
             input(type='hidden', name='hosted_button_id', value='FHLDNWJM3XKGU')
@@ -73,7 +74,7 @@ html
           h3
             span ¡Donaciones!
           p
-            | Tu donación de US$10 irá en directa mantención de la cuenta Digital Ocean que mantiene a nuestro bot <img src="https://emoji.slack-edge.com/T0R6F3YAX/huemul/8eea7517e45d75e6.png" width="18">. Además te enviaremos 3 stickers y serás miembro golden <img src="https://emoji.slack-edge.com/T0R6F3YAX/monea/3eff7e75a7a5e8b4.png" title="gold"> por <b>2 meses</b>.
+            | Tu donación de US$10 irá en directa mantención de la cuenta del VPS que mantiene a nuestro bot <img src="https://emoji.slack-edge.com/T0R6F3YAX/devschile/451c6509496ff3b9.png" width="20">. Además te enviaremos 3 stickers y serás miembro golden <img src="https://emoji.slack-edge.com/T0R6F3YAX/monea/3eff7e75a7a5e8b4.png" title="gold"> por <b>2 meses</b> con múltiples beneficios en la comunidad.
           form.box-donation(action='https://www.paypal.com/cgi-bin/webscr', method='post', target='_top')
             input(type='hidden', name='cmd', value='_s-xclick')
             input(type='hidden', name='hosted_button_id', value='BAS3GCERCZLLU')
@@ -83,7 +84,7 @@ html
         .column-3
           h3
             span Impuesto Huemul
-          p Cualquier transacción dentro de devsChile merece un pago voluntario por impuesto de timbres y estampillas al cuidado del bot <img src="https://emoji.slack-edge.com/T0R6F3YAX/huemul/8eea7517e45d75e6.png" width="18">
+          p Cualquier transacción dentro de devsChile merece un pago voluntario por impuesto de timbres y estampillas al cuidado del bot <img src="https://emoji.slack-edge.com/T0R6F3YAX/devschile/451c6509496ff3b9.png" width="20">
           form(action='https://www.paypal.com/cgi-bin/webscr', method='post')
             input(type='hidden', name='business', value='juanbrujo@gmail.com')
             input(type='hidden', name='cmd', value='_donations')
@@ -101,7 +102,7 @@ html
         .column-12.column-center.text-center.gutter-top
           +testimony('@pinceleart', ' https://ca.slack-edge.com/T0R6F3YAX-U0R6DCC68-5d236d4f5651-512', 'si mira estoy cotizando columpios de aves para comprar al por mayor')
           +testimony('@gmq', 'https://ca.slack-edge.com/T0R6F3YAX-U0R6H0HQD-g494a30a9e8a-512', 'estás puro weando poh')
-          +testimony('@jorgeepunan', 'https://ca.slack-edge.com/T0R6F3YAX-U0R6AKR0Q-ed04a99ccec0-512', 'mi vida es un desastre ni scrum ni kanban me la ordena')
+          +testimony('@jorgeepunan', 'https://i.imgur.com/9jvfE8l.png', 'mi vida es un desastre ni scrum ni kanban me la ordena')
           +testimony('@hector', 'https://ca.slack-edge.com/T0R6F3YAX-U0R6E17PC-gbbd25763739-512', 'Voy a tomar un avión, si se cae, déjenme el karma en cero, para entrar al cielo')
           +testimony('@alvaroveliz', 'https://i.imgur.com/6wYkTr4.png', 'melon y melame eran programadores. melon programaba en frontend. melame el backend')
           +testimony('@alvaroveliz', 'https://i.imgur.com/6wYkTr4.png', 'a un compañero le decian el huachipato porque era una mezcla de huachimingo y tenia care pato')
@@ -111,15 +112,18 @@ html
           +testimony('@catuga', 'https://i.imgur.com/ipzlj75.png', 'uds están en ES6, yo estoy en IE6')
           +testimony('@alvaromeza', 'https://i.imgur.com/rystuZQ.png', 'todavía cacho gente que le dice lightbox a los modales')
 
+      hr
+      .row
+        .column-12.column-center.text-center
+          © Copyright 2017 ~ 2019 devsChile Core Team. <a href="http://devschile.github.io/codigo-de-conducta/" target="_blank">CoC</a>.  License: <a href="https://gist.githubusercontent.com/juanbrujo/36fa4d629b49f900252e/raw/d383b5bef4c99f038f2b1305a7d1f592b6f64a2d/DWTFYWTPL" target="_blank">DWTFYWTPL</a>.
+          <br>Contacto: <a href="mailto:huemul@devschile.cl">huemul@devschile.cl</a>
+
     aside#unete.tinymodal-window
       .wrap-modal
-        iframe#heroku-unete(src='https://devschile-unete.herokuapp.com/', frameborder='0')
+        iframe#heroku-unete(src='https://unete-2019.herokuapp.com/', frameborder='0')
     aside#sticker.tinymodal-window.text-center
       .wrap-modal
-        img(src='https://i.imgur.com/KfAx4Mx.jpg', alt='Sticker Huemul')
-    aside#sticker_new.tinymodal-window.text-center
-      .wrap-modal
-        img(src='https://i.imgur.com/QKSQvzK.jpg', alt='Nuevos Stickers')
+        img(src='https://i.imgur.com/tKU2Hkx.jpg', alt='Stickers Huemul')
 
 
     script(src='assets/js/libs.js')

@@ -75,11 +75,9 @@ html
             span ¡Donaciones!
           p
             | Tu donación de US$10 irá en directa mantención de la cuenta del VPS que mantiene a nuestro bot <img src="https://emoji.slack-edge.com/T0R6F3YAX/devschile/451c6509496ff3b9.png" width="20">. Además te enviaremos 3 stickers y serás miembro golden <img src="https://emoji.slack-edge.com/T0R6F3YAX/monea/3eff7e75a7a5e8b4.png" title="gold"> por <b>2 meses</b> con múltiples beneficios en la comunidad.
-          form.box-donation(action='https://www.paypal.com/cgi-bin/webscr', method='post', target='_top')
-            input(type='hidden', name='cmd', value='_s-xclick')
-            input(type='hidden', name='hosted_button_id', value='BAS3GCERCZLLU')
-            input(type='image', src='https://www.paypalobjects.com/es_ES/ES/i/btn/btn_donateCC_LG.gif', border='0', name='submit', alt='PayPal. La forma rápida y segura de pagar en Internet.')
-            img(alt='', border='0', src='https://www.paypalobjects.com/en_US/i/scr/pixel.gif', width='1', height='1')
+            script(src='https://cdn.qvo.cl/checkout.min.js')
+            #qvo-button-container
+            script(src='assets/js/qvo.js')
         .column-1
         .column-3
           h3

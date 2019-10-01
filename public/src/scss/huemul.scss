@@ -172,3 +172,11 @@ hr {
     max-width: 100%;
   }
 }
+
+#qvo-button-container {
+  text-align: center;
+
+  > div {
+    display: inline;
+  }
+}

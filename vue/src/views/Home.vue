@@ -54,7 +54,7 @@
       <div class="column-2"></div>
       <div class="column-3">
         <h3><span>¡Donaciones!</span></h3>
-        <p>Tu donación de US$10 irá en directa mantención de la cuenta del VPS que mantiene a nuestro bot <img src="https://emoji.slack-edge.com/T0R6F3YAX/devschile/451c6509496ff3b9.png" width="20">. Además te enviaremos <a href="#" @click.prevent="$modal.show('sticker')">3 stickers</a> y serás miembro golden <img src="https://emoji.slack-edge.com/T0R6F3YAX/monea/3eff7e75a7a5e8b4.png" title="gold"> por <b>2 meses</b> con múltiples beneficios en la comunidad.
+        <p>Tu donación de $7.500 irá en directa mantención de la cuenta del VPS que mantiene a nuestro bot <img src="https://emoji.slack-edge.com/T0R6F3YAX/devschile/451c6509496ff3b9.png" width="20">. Además te enviaremos <a href="#" @click.prevent="$modal.show('sticker')">2 stickers</a> y serás miembro golden <img src="https://emoji.slack-edge.com/T0R6F3YAX/monea/3eff7e75a7a5e8b4.png" title="gold"> por <b>2 meses</b> con múltiples beneficios en la comunidad.
         </p>
         <a href='https://www.flow.cl/btn.php?token=k2qnq1h' target='_blank'>
           <img src='https://www.flow.cl/img/botones/btn-donar-celeste.png'>
@@ -63,7 +63,7 @@
       <div class="column-2"></div>
       <div class="column-3">
         <h3><span>Impuesto Huemul</span></h3>
-        <p>Cualquier transacción dentro de devsChile merece un pago voluntario por impuesto de timbres y estampillas al cuidado del bot <img src="https://emoji.slack-edge.com/T0R6F3YAX/devschile/451c6509496ff3b9.png" width="20"></p>
+        <p>Cualquier transacción dentro de devsChile merece un pago voluntario por impuesto de timbres y estampillas al cuidado del bot <img src="https://emoji.slack-edge.com/T0R6F3YAX/devschile/451c6509496ff3b9.png" width="20">.</p>
         <a href='https://www.flow.cl/btn.php?token=gxlhapc' target='_blank'>
           <img src='https://www.flow.cl/img/botones/btn-donar-blanco.png'>
         </a>
@@ -75,7 +75,7 @@
     <hr>
     <div class="row">
       <div class="column-12 column-center text-center">
-        © Copyright 2017 ~ {{ new Date().getFullYear() }} devsChile Core Team. Lea nuestro <a href="http://devschile.github.io/codigo-de-conducta/" target="_blank">CoC</a>.  License: <a href="https://gist.githubusercontent.com/juanbrujo/36fa4d629b49f900252e/raw/d383b5bef4c99f038f2b1305a7d1f592b6f64a2d/DWTFYWTPL" target="_blank">DWTFYWTPL</a>.
+        © Copyright 2016 ~ {{ new Date().getFullYear() }} devsChile Core Team. Lea nuestro <a href="http://devschile.github.io/codigo-de-conducta/" target="_blank">CoC</a>.  License: <a href="https://gist.githubusercontent.com/juanbrujo/36fa4d629b49f900252e/raw/d383b5bef4c99f038f2b1305a7d1f592b6f64a2d/DWTFYWTPL" target="_blank">DWTFYWTPL</a>.
         <br>Contacto: <a href="mailto:huemul@devschile.cl">huemul@devschile.cl</a>
       </div>
     </div>

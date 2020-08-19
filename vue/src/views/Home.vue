@@ -38,12 +38,12 @@
     </div>
     <hr>
     <div class="row">
-      <div class="column-10">
+      <div class="column-8">
         <div class="text-center">
           <HuemulAscii />
         </div>
       </div>
-      <div class="column-2 gutter-top-xsmall">
+      <div class="column-4 gutter-top-xsmall">
         <div class="vertical-centered-text vertical-middle">
           <p>Tenemos al mejor <i>Hubot</i> de todos los Slacks. <a href="https://github.com/devschile/huemul">Huemul</a> nos acompaña todos los días y su grupo de apoyo no se cansa de hacerle mejoras. Únete y conócelo, crea nuevas funcionalidades y apóyanos en su desarrollo en el canal <a href="https://devschile.slack.com/messages/huemul-devs">#huemul-devs</a>.</p>
         </div>
@@ -51,24 +51,25 @@
     </div>
     <hr>
     <div class="row text-center">
-      <div class="column-2"></div>
-      <div class="column-3">
+      <div class="column-4">
         <h3><span>¡Donaciones!</span></h3>
-        <p>Tu donación de $7.500 irá en directa mantención de la cuenta del VPS que mantiene a nuestro bot <img src="https://emoji.slack-edge.com/T0R6F3YAX/devschile/451c6509496ff3b9.png" width="20">. Además te enviaremos <a href="#" @click.prevent="$modal.show('sticker')">2 stickers</a> y serás miembro golden <img src="https://emoji.slack-edge.com/T0R6F3YAX/monea/3eff7e75a7a5e8b4.png" title="gold"> por <b>2 meses</b> con múltiples beneficios en la comunidad.
+        <p>Tu donación de <b>$7.500</b> irá en directa mantención de la cuenta del VPS que mantiene a nuestro bot <img src="https://emoji.slack-edge.com/T0R6F3YAX/devschile/451c6509496ff3b9.png" width="20">. Además te enviaremos <a href="#" @click.prevent="$modal.show('sticker')">stickers</a> y serás miembro golden <img src="https://emoji.slack-edge.com/T0R6F3YAX/monea/3eff7e75a7a5e8b4.png" title="gold"> por <b>2 meses</b> con múltiples beneficios en la comunidad.
         </p>
         <a href='https://www.flow.cl/btn.php?token=k2qnq1h' target='_blank'>
           <img src='https://www.flow.cl/img/botones/btn-donar-celeste.png'>
         </a>
       </div>
-      <div class="column-2"></div>
-      <div class="column-3">
+      <div class="column-4">
         <h3><span>Impuesto Huemul</span></h3>
-        <p>Cualquier transacción dentro de devsChile merece un pago voluntario por impuesto de timbres y estampillas al cuidado del bot <img src="https://emoji.slack-edge.com/T0R6F3YAX/devschile/451c6509496ff3b9.png" width="20">.</p>
+        <p>Cualquier transacción dentro de devsChile merece un pago voluntario por impuesto de timbres y estampillas al cuidado del bot <img src="https://emoji.slack-edge.com/T0R6F3YAX/devschile/451c6509496ff3b9.png" width="20">: ventas de productos, cambios y ascensos en la pega, etc.</p>
         <a href='https://www.flow.cl/btn.php?token=gxlhapc' target='_blank'>
           <img src='https://www.flow.cl/img/botones/btn-donar-blanco.png'>
         </a>
       </div>
-      <div class="column-2"></div>
+      <div class="column-4">
+        <h3><span>Donación por suscripción</span></h3>
+        <p>Ya podemos crear suscripciones para donaciones mensuales por <b>$3.300</b> y puedes darlo de baja cuando solicites. Si te parece este modo de colaborar a la comunidad escribe un DM a <a href="https://devschile.slack.com/team/U0R6AKR0Q" target="_blank">@jorgeepunan</a> para agregar tus datos personales para que completes el proceso.</p>
+      </div>
     </div>
     <hr>
     <Testimonies />

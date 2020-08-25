@@ -1,8 +1,0 @@
-.DS_Store
-.svn
-node_modules
-bower_components
-.sass-cache
-*.log
-dist
-yarn.lock

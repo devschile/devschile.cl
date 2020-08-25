@@ -1,4 +1,7 @@
-# vue
+# DevsChile Site 2020
+
+- Updated JS library
+- Changed payment gateway
 
 ## Project setup
 ```
@@ -19,6 +22,3 @@ yarn build
 ```
 yarn lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

@@ -3,3 +3,8 @@ root /var/www/html
 gzip
 log stdout
 errors stdout
+
+rewrite {
+    regexp .*
+    to {path} /
+}

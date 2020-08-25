@@ -1,4 +1,8 @@
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
 [build]
-  base    = "public"
-  command = "grunt"
-  publish = "public/dist"
+  command = "yarn build"
+  publish = "dist"

@@ -8,11 +8,11 @@ WORKDIR /usr/src/app
 RUN npm i -g @vue/cli
 
 # Install npm dependencies
-COPY ./vue/package.json ./vue/yarn.* /usr/src/app/
+COPY ./package.json ./yarn.* /usr/src/app/
 RUN yarn
 
 # Build assets
-COPY ./vue /usr/src/app/
+COPY ./ /usr/src/app/
 RUN yarn build
 
 FROM abiosoft/caddy:no-stats

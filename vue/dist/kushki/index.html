@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="https://cdn.kushkipagos.com/kushki-checkout.js"></script>
+    <style>
+      html, body {
+        height: 100%;
+        overflow: hidden;
+      }
+      body {
+        margin: 0;
+        padding: 10px;
+      }
+      .form {
+        width: 400px;
+        margin: 0 auto;
+      }
+      .form iframe {
+        height: 450px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="form">
+      <form id="kushki-pay-form" action="confirm" method="post">
+        <input type="hidden" name="cart_id" value="123">
+      </form>
+
+      <script type="text/javascript">
+        var kushki = new KushkiCheckout({
+          form: 'kushki-pay-form',
+          merchant_id: '0e7c2549badd4f1ba6fb02cfd50d576a',
+          amount: '7000',
+          currency: 'CLP',
+          payment_methods: ['credit-card', 'card_async'],
+          inTestEnvironment: true,
+          return_url: 'https://my-ecommerce.com/'
+        });
+      </script>
+    </div>
+    
+  </body>
+</html>

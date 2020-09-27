@@ -52,7 +52,7 @@
     <hr>
     <div class="row text-center">
       <div class="column-4">
-        <h3><span>¡Donaciones!</span></h3>
+        <h3 id="donations"><span>¡Donaciones!</span></h3>
         <p>Tu donación de <b>$7.500</b> irá en directa mantención de la cuenta del VPS que mantiene a nuestro bot <img src="https://emoji.slack-edge.com/T0R6F3YAX/devschile/451c6509496ff3b9.png" width="20">. Además te enviaremos <a href="#" @click.prevent="$modal.show('sticker')">stickers</a> y serás miembro golden <img src="https://emoji.slack-edge.com/T0R6F3YAX/monea/3eff7e75a7a5e8b4.png" title="gold"> por <b>2 meses</b> con múltiples beneficios en la comunidad.
         </p>
         <a href='https://www.flow.cl/btn.php?token=k2qnq1h' target='_blank'>

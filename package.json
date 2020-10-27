@@ -42,16 +42,19 @@
     },
     "extends": [
       "plugin:vue/essential",
-      "@vue/standard"
+      "@vue/standard",
+      "plugin:prettier/recommended"
     ],
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "prettier/prettier": "warn"
+    }
   },
   "browserslist": [
-    "> 1%",
-    "last 2 versions",
+    "> 3%",
+    "last 3 versions",
     "not dead"
   ]
 }

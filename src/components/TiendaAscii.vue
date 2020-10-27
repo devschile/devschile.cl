@@ -1,0 +1,51 @@
+<template>
+  <!-- eslint-disable -->
+  <pre style="font: 1vmin/0.8vmin monospace">
+WNXXXXXXXNWWWWWWWWWNXXXXXXXXXXWWWWWWWNXXXXNW
+ WXxxxxxxxxx0XXXXXXXXXKkxxxxxxxxxxkKXXXXXxxxxxxXW
+WN0xddddddddkKXXXXXXXXXKxddddddddddxKXXXXXddddddx0NW
+WKkdddddddddkKXXXXXXXXXXKkddddddddddkKXXXXXddddddddkKW
+WXOxdddddddddx0XXXXXXXXXXXKkddddddddddkKXXXXXxddddddddxOXW
+WN0xddddddddddxOXXXXXXXXXXXXKxddddddddddxKXXXXXOxdddddddddx0NW
+WKkxdddddddddddkKXXXXXXXXXXXXKxddddddddddxKXXXXXKkddddddddddxkKW
+WXOxddddddddddddkKXXXXXXXXXXXXXKxddddddddddxKXXXXXXKkdddddddddddxOXW
+N0xddddddddddddoxOKKKKKKKKKKKKKK0xddddddddddx0KKKKKKKOxodddddddddddx0N
+KdllllllllllllllokOOOOOOOOOOOOOOxolllllllllloxOOOOOOOkollllllllllllldKW
+WKoccccccccccccccoxOOOOOOOOOOOOOOxlcccccccccclxOOOOOOOxocccccccccccccoKW
+WKdcccccccccccccclxOOOOOOOOOOOOOkdlccccccccccldkOOOOOOxlcccccccccccccdK
+NOlccccccccccccc:lkOOOOOOOOOOOOxl:cccccccccc:lxOOOOOkl:cccccccccccclON
+NOolcccccccccc;,:lxOOOOOOOOOkxl;;:cccccccc:;;lxOOOxl;,;cccccccccloON
+WKkolcccccc:;,,,:coxkOOOOkxo:;,,,;:cccc:;,,,;:oxkc;,,,;cccccclokKW
+WX0Oxxdlc,,,,,,,::codddc:;,,,,,,,cccc,,,,,,,;:c,,,,,,cldxxO0XW
+WWXd,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,dXWW
+Nd:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,:dN
+Nd:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,:dN
+Nd:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,:dN
+Nd:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,:dN
+Nd:,,,,,coooooooooooooooooo,,,,,,;coooooolc;,,,:dN
+Nd:,,,:o0XXXXXXXXXXXXXXXXXX;,,,,;dKXXXXXXX0o,,,:dN
+Nd:,,,:dKXXXXXXXXXXXXXXXXXX:,,,,:kXXXXXXXXKd,,,:dN
+Nd:,,,:dXXXXXXXXXXXXXXXXXXX:,,,,:kXXXXXXXXXd,,,:dN
+Nd:,,,:dKXXXXXXXXXXXXXXXXXX:,,,,:kXXXXXXXXKd,,,:dN
+Nd:,,,:dKXXXXXXXXXXXXXXXXXX:,,,,:kXXXXXXXXKd,,,:dN
+Nd:,,,:dKXXXXXXXXXXXXXXXXXX:,,,,:kXXXXXXXXKd,,,:dN
+Nd:,,,:dKXXXXXXXXXXXXXXXXXX:,,,,:kXXXXXXXXKd,,,:dN
+Nd:,,,:dKXXXXXXXXXXXXXXXXXX:,,,,:kXXXXXXXXKd,,,:dN
+Nd:,,,:dKXXXXXXXXXXXXXXXXXX:,,,,:kXXXXXXXXKd,,,:dN
+Nd:,,,:dKXXXXXXXXXXXXXXXXXX:,,,,:kXXXXXXXXKd,,,:dN
+Nd:,,,:dXXXXXXXXXXXXXXXXXXX:,,,,:kXXXXXXXXKd,,,:dN
+Nd:,,,:dKXXXXXXXXXXXXXXXXXX:,,,,:kXXXXXXXXKd,,,:dN
+Nd:,,,:dKXXXXXXXXXXXXXXXXXX:,,,,:kXXXXXXXXKd,,,:dN
+Nd:,,,:lOKXXXXXXXXXXXXXXXXX;,,,,:kXXXXXXXXKd,,,:dN
+Nd:,,,,,:llllllllllllllllll,,,,,:kXXXXXXXXKd,,,:dN
+Nd:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,:kXXXXXXXXKd,,,:dN
+Nd:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,:kXXXXXXXXKd,,,:dN
+Nd:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,:kXXXXXXXXKd,,,:dN
+Nd:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,:kXXXXXXXXKd,,,:dN
+Nd:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,:kXXXXXXXXKd,,,:dN
+Nd:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,:lodddddddoc,,,:dN
+Wk:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,:kW
+ W0dddddddddddddddddddddddddddddddddddddddddddd0W
+  </pre>
+  <!-- eslint-enable -->
+</template>

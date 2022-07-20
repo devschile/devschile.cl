@@ -27,15 +27,34 @@
       <div class="column-4 column-push-2 gutter-top-xsmall">
         <div class="vertical-centered-text vertical-middle">
           <p>
-            <b>devsChile</b> es más que un grupo de Slack; es una comunidad de
+            <b>devsChile</b> es más que un grupo de Slack: es una comunidad de
             diseñadores y desarrolladores web que se juntan a comentar, ayudar,
             sugerir y reclamar de su día-a-día. Canales como <b>#backend</b>,
-            <b>#cultura</b>, <b>#frontend</b>, <b>#lifehacks</b>, <b>#pegas</b>,
-            <b>#ux</b> y por supuesto <b>#random</b> son algunos de los que
-            puedes ingresar, aportar y hasta procrastinar un rato mientras dure
-            tu <i>Pomodoro</i>.
+            <b>#cultura</b>, <b>#frontend</b>, <b>#lifehacks</b>,
+            <b>#trabajos</b>, <b>#ux</b> y por supuesto <b>#random</b> son
+            algunos de los que puedes ingresar, aportar y hasta procrastinar un
+            rato mientras dure tu <i>Pomodoro</i>.
           </p>
         </div>
+      </div>
+    </div>
+    <hr />
+    <div class="row">
+      <div class="column-8 column-offset-2 column-center text-center">
+        <h3><span>Auspiciador</span></h3>
+        <a href="https://boolean.cl/" target="_blank">
+          <img
+            src="https://i.imgur.com/qlL6OFG.png"
+            alt="Academia de Programación Boolean"
+            width="300"
+          />
+        </a>
+        <p><em>Porque juntos somos más</em></p>
+        <p>
+          <b>¡Academia de Programación Boolean auspicia devsChile!</b> Para que
+          entre todos aprendamos y compartamos conocimientos juntos ❤️<br />
+          Somos más, somos comunidad.
+        </p>
       </div>
     </div>
     <hr />
@@ -44,10 +63,9 @@
         <div class="vertical-centered-text vertical-tall">
           <p>
             <b>devsChile</b> hospeda a los organizadores del famoso evento
-            mensual <b>BeerJS Santiago</b> y <b>BeerJS Valdivia</b>, y sus
-            usuarios siempre son privilegiados con el primer anuncio oficial de
-            una nueva edición y de poder inscribirse 1 dia antes que por otros
-            medios (<a href="https://www.beerjs.cl/">BeerJS</a>).
+            <a href="https://www.beerjs.cl/">BeerJS</a>, y sus usuarios siempre
+            son privilegiados con el primer anuncio oficial de una nueva edición
+            y de poder inscribirse 1 dia antes que por otros medios.
           </p>
         </div>
       </div>
@@ -67,11 +85,13 @@
       <div class="column-4 gutter-top-xsmall">
         <div class="vertical-centered-text vertical-middle">
           <p>
-            Tenemos al mejor <i>Hubot</i> de todos los Slacks.
-            <a href="https://github.com/devschile/huemul">Huemul</a> nos
-            acompaña todos los días y su grupo de apoyo no se cansa de hacerle
-            mejoras. Únete y conócelo, crea nuevas funcionalidades y apóyanos en
-            su desarrollo en el canal
+            Tenemos al mejor <i>Hubot</i> de todos los Slacks:
+            <a href="https://github.com/devschile/huemul" target="_blank"
+              >Huemul</a
+            >
+            nos acompaña todos los días y su grupo de apoyo no se cansa de
+            hacerle mejoras. Únete y conócelo, crea nuevas funcionalidades y
+            apóyanos en su desarrollo en el canal
             <a href="https://devschile.slack.com/messages/huemul-devs"
               >#huemul-devs</a
             >.
@@ -91,7 +111,7 @@
             width="20"
           />. Además te enviaremos
           <a href="#" @click.prevent="$modal.show('sticker')">stickers</a> y
-          serás miembro golden
+          serás miembro gold
           <img
             src="https://emoji.slack-edge.com/T0R6F3YAX/monea/3eff7e75a7a5e8b4.png"
             title="gold"
@@ -219,27 +239,8 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../assets/css/normalize.css";
-@import "../assets/scss/mixins";
-@import "../assets/scss/colors";
-@import "../assets/scss/fonts";
-@import "../assets/scss/variables";
-@import "../assets/scss/components";
-
-html,
-body {
-  min-height: 100%;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
+@import "../assets/css/normalize.min.css";
+@import "../assets/scss/all";
 
 html {
   overflow-x: hidden;
@@ -292,6 +293,7 @@ code {
 
 a {
   color: $link;
+
   &:hover {
     text-decoration: none;
   }

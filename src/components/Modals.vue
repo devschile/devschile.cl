@@ -10,7 +10,13 @@
       :minHeight="600"
     >
       <div class="wrap-modal">
-        <iframe class="heroku-unete" src="https://unete-2019.herokuapp.com/" width="100%" height="500px" frameborder="0"></iframe>
+        <iframe
+          class="heroku-unete"
+          src="https://unete-2019.herokuapp.com/"
+          width="100%"
+          height="500px"
+          frameborder="0"
+        ></iframe>
       </div>
     </modal>
     <modal
@@ -23,7 +29,11 @@
       :minHeight="600"
     >
       <div class="wrap-modal">
-        <img src="https://i.imgur.com/tKU2Hkx.jpg" alt="Stickers Huemul" class="sticker">
+        <img
+          src="https://i.imgur.com/tKU2Hkx.jpg"
+          alt="Stickers Huemul"
+          class="sticker"
+        />
       </div>
     </modal>
   </div>

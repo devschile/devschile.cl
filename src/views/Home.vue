@@ -139,7 +139,11 @@
       <div class="column-6 gutter-top-xsmall">
         <div class="vertical-centered-text vertical-middle">
           <p>
-            Nuestra <a href="https://tienda.devschile.cl/" target="_blank">Tienda Virtual</a> siempre tiene nuevos productos para la comunidad: stickers, pines, tazones. Precios incluyen entrega y el stock va variando según disponibilidad.
+            Nuestra
+            <a href="https://huemul.tienda/" target="_blank">Tienda Virtual</a>
+            siempre tiene nuevos productos para la comunidad: stickers, pines,
+            tazones. Precios incluyen entrega y el stock va variando según
+            disponibilidad.
           </p>
         </div>
       </div>
@@ -149,8 +153,13 @@
     <hr />
     <div class="row">
       <div class="column-12 column-center text-center">
-        © Copyright 2016 ~ {{ new Date().getFullYear() }} devsChile Core Team.
-        Lea nuestro
+        © Copyright 2016 ~ {{ new Date().getFullYear() }}
+        <a
+          href="https://github.com/orgs/devschile/teams/org/members"
+          target="_blank"
+        >
+          devsChile Core Team </a
+        >. Lea nuestro
         <a href="http://devschile.github.io/codigo-de-conducta/" target="_blank"
           >CoC</a
         >. License:
@@ -167,24 +176,24 @@
 </template>
 
 <script>
-import HuemulAscii from '../components/HuemulAscii'
-import BeerJSAscii from '../components/BeerJSAscii'
-import SlackAscii from '../components/SlackAscii'
-import TiendaAscii from '../components/TiendaAscii'
-import Testimonies from '../components/Testimonies'
-import Modals from '../components/Modals'
+import HuemulAscii from "../components/HuemulAscii";
+import BeerJSAscii from "../components/BeerJSAscii";
+import SlackAscii from "../components/SlackAscii";
+import TiendaAscii from "../components/TiendaAscii";
+import Testimonies from "../components/Testimonies";
+import Modals from "../components/Modals";
 
-import Vue from 'vue'
-import VueTyperPlugin from 'vue-typer'
-import VModal from 'vue-js-modal'
+import Vue from "vue";
+import VueTyperPlugin from "vue-typer";
+import VModal from "vue-js-modal";
 
-Vue.use(VueTyperPlugin)
-Vue.use(VModal)
+Vue.use(VueTyperPlugin);
+Vue.use(VModal);
 
 export default {
-  name: 'Home',
+  name: "Home",
   data() {
-    return {}
+    return {};
   },
   components: {
     HuemulAscii,
@@ -192,7 +201,7 @@ export default {
     SlackAscii,
     TiendaAscii,
     Testimonies,
-    Modals,
+    Modals
   },
   methods: {
     printInConsole() {
@@ -200,22 +209,22 @@ export default {
       const huemulAscii =
         "                                 ;;;;;;   ;;;\n                                 @@@@@@   @@@\n                              ;;;+++@@@;;;+++;;;\n                              @@@;;;@@@@@@;;;@@@\n                              @@@;;;@@@@@@;;;@@@\n                              @@@;;;;;;;;;;;;@@@\n                                 @@@;;;@@@;;;;;;@@@\n                                 @@@;;;@@@;;;;;;@@@\n                                 @@@;;;;;;;;;;;;;;;@@@\n                                 @@@;;;;;;;;;;;;;;;@@@\n   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@;;;;;;;;;;;;;;;@@@@@@\n   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@;;;;;;;;;;;;;;;@@@@@@\n@@@......:;;;;;;;;;;;;;;;;;;;;;;;;;;;@@@@@@@@@\n@@@......:;;;;;;;;;;;;;;;;;;;;;;;;;;;@@@@@@@@@\n   @@@+;;;;;;;;;;;;;;;;;;;;;;;;;;;@@@\n   @@@+;;;;;;;;;;;;;;;;;;;;;;;;;;;@@@\n   @@@+;;;;;;;;;;;;;;;;;;;;;;;;@@@\n   @@@+;;;;;;;;;;;;;;;;;;;;;;;;@@@\n      ;@@+;;;;;;@@@@@@@@@;;;;;;@@@\n      ;@@+;;;;;;@@@@@@@@@;;;;;;@@@\n   @@@+;;;;;;@@@         @@@;;;@@@\n   @@@+;;;;;;@@@         @@@;;;@@@\n   @@@'..'@@@            @@@...@@@\n   @@@'..'@@@            @@@...@@@\n      ;@@;                  @@@\n      ;@@;                  @@@     RIP";
       /* eslint-enable */
-      console.log(huemulAscii)
-    },
+      console.log(huemulAscii);
+    }
   },
-  created: function () {
-    this.printInConsole()
-  },
-}
+  created: function() {
+    this.printInConsole();
+  }
+};
 </script>
 
 <style lang="scss">
-@import '../assets/css/normalize.css';
-@import '../assets/scss/mixins';
-@import '../assets/scss/colors';
-@import '../assets/scss/fonts';
-@import '../assets/scss/variables';
-@import '../assets/scss/components';
+@import "../assets/css/normalize.css";
+@import "../assets/scss/mixins";
+@import "../assets/scss/colors";
+@import "../assets/scss/fonts";
+@import "../assets/scss/variables";
+@import "../assets/scss/components";
 
 html,
 body {
@@ -372,7 +381,6 @@ hr {
       max-width: 50%;
       border-radius: 50%;
       border: 5px solid $font;
-      background-color: #fff;
     }
   }
   .box-testimony {
@@ -391,6 +399,7 @@ hr {
   justify-content: center;
   max-width: 100vw;
   max-height: 100vh;
+  background: url(https://i.imgur.com/AkZ15K5.gif) center center no-repeat;
 
   img {
     display: block;

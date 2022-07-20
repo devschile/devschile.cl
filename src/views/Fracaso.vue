@@ -4,7 +4,9 @@
       <div class="column-12">
         <div class="text-center">
           <h1>Error en la transacción...</h1>
-          <img src="https://media.giphy.com/media/efI1QDtVLZv4YZ9eJC/giphy.gif">
+          <img
+            src="https://media.giphy.com/media/efI1QDtVLZv4YZ9eJC/giphy.gif"
+          />
         </div>
       </div>
     </div>

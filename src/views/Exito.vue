@@ -4,7 +4,7 @@
       <div class="column-12">
         <div class="text-center">
           <h1>¡Transacción exitosa!</h1>
-          <img src="https://media.giphy.com/media/GStLeae4F7VIs/giphy.gif">
+          <img src="https://media.giphy.com/media/GStLeae4F7VIs/giphy.gif" />
         </div>
       </div>
     </div>

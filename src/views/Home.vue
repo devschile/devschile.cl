@@ -27,15 +27,34 @@
       <div class="column-4 column-push-2 gutter-top-xsmall">
         <div class="vertical-centered-text vertical-middle">
           <p>
-            <b>devsChile</b> es más que un grupo de Slack; es una comunidad de
+            <b>devsChile</b> es más que un grupo de Slack: es una comunidad de
             diseñadores y desarrolladores web que se juntan a comentar, ayudar,
             sugerir y reclamar de su día-a-día. Canales como <b>#backend</b>,
-            <b>#cultura</b>, <b>#frontend</b>, <b>#lifehacks</b>, <b>#pegas</b>,
-            <b>#ux</b> y por supuesto <b>#random</b> son algunos de los que
-            puedes ingresar, aportar y hasta procrastinar un rato mientras dure
-            tu <i>Pomodoro</i>.
+            <b>#cultura</b>, <b>#frontend</b>, <b>#lifehacks</b>,
+            <b>#trabajos</b>, <b>#ux</b> y por supuesto <b>#random</b> son
+            algunos de los que puedes ingresar, aportar y hasta procrastinar un
+            rato mientras dure tu <i>Pomodoro</i>.
           </p>
         </div>
+      </div>
+    </div>
+    <hr />
+    <div class="row">
+      <div class="column-8 column-offset-2 column-center text-center">
+        <h3><span>Auspiciador</span></h3>
+        <a href="https://boolean.cl/" target="_blank">
+          <img
+            src="https://i.imgur.com/qlL6OFG.png"
+            alt="Academia de Programación Boolean"
+            width="300"
+          />
+        </a>
+        <p><em>Porque juntos somos más</em></p>
+        <p>
+          <b>¡Academia de Programación Boolean auspicia devsChile!</b> Para que
+          entre todos aprendamos y compartamos conocimientos juntos ❤️<br />
+          Somos más, somos comunidad.
+        </p>
       </div>
     </div>
     <hr />
@@ -44,10 +63,9 @@
         <div class="vertical-centered-text vertical-tall">
           <p>
             <b>devsChile</b> hospeda a los organizadores del famoso evento
-            mensual <b>BeerJS Santiago</b> y <b>BeerJS Valdivia</b>, y sus
-            usuarios siempre son privilegiados con el primer anuncio oficial de
-            una nueva edición y de poder inscribirse 1 dia antes que por otros
-            medios (<a href="https://www.beerjs.cl/">BeerJS</a>).
+            <a href="https://www.beerjs.cl/">BeerJS</a>, y sus usuarios siempre
+            son privilegiados con el primer anuncio oficial de una nueva edición
+            y de poder inscribirse 1 dia antes que por otros medios.
           </p>
         </div>
       </div>
@@ -67,11 +85,13 @@
       <div class="column-4 gutter-top-xsmall">
         <div class="vertical-centered-text vertical-middle">
           <p>
-            Tenemos al mejor <i>Hubot</i> de todos los Slacks.
-            <a href="https://github.com/devschile/huemul">Huemul</a> nos
-            acompaña todos los días y su grupo de apoyo no se cansa de hacerle
-            mejoras. Únete y conócelo, crea nuevas funcionalidades y apóyanos en
-            su desarrollo en el canal
+            Tenemos al mejor <i>Hubot</i> de todos los Slacks:
+            <a href="https://github.com/devschile/huemul" target="_blank"
+              >Huemul</a
+            >
+            nos acompaña todos los días y su grupo de apoyo no se cansa de
+            hacerle mejoras. Únete y conócelo, crea nuevas funcionalidades y
+            apóyanos en su desarrollo en el canal
             <a href="https://devschile.slack.com/messages/huemul-devs"
               >#huemul-devs</a
             >.
@@ -91,7 +111,7 @@
             width="20"
           />. Además te enviaremos
           <a href="#" @click.prevent="$modal.show('sticker')">stickers</a> y
-          serás miembro golden
+          serás miembro gold
           <img
             src="https://emoji.slack-edge.com/T0R6F3YAX/monea/3eff7e75a7a5e8b4.png"
             title="gold"
@@ -139,7 +159,11 @@
       <div class="column-6 gutter-top-xsmall">
         <div class="vertical-centered-text vertical-middle">
           <p>
-            Nuestra <a href="https://tienda.devschile.cl/" target="_blank">Tienda Virtual</a> siempre tiene nuevos productos para la comunidad: stickers, pines, tazones. Precios incluyen entrega y el stock va variando según disponibilidad.
+            Nuestra
+            <a href="https://huemul.tienda/" target="_blank">Tienda Virtual</a>
+            siempre tiene nuevos productos para la comunidad: stickers, pines,
+            tazones. Precios incluyen entrega y el stock va variando según
+            disponibilidad.
           </p>
         </div>
       </div>
@@ -149,8 +173,13 @@
     <hr />
     <div class="row">
       <div class="column-12 column-center text-center">
-        © Copyright 2016 ~ {{ new Date().getFullYear() }} devsChile Core Team.
-        Lea nuestro
+        © Copyright 2016 ~ {{ new Date().getFullYear() }}
+        <a
+          href="https://github.com/orgs/devschile/teams/org/members"
+          target="_blank"
+        >
+          devsChile Core Team </a
+        >. Lea nuestro
         <a href="http://devschile.github.io/codigo-de-conducta/" target="_blank"
           >CoC</a
         >. License:
@@ -167,24 +196,24 @@
 </template>
 
 <script>
-import HuemulAscii from '../components/HuemulAscii'
-import BeerJSAscii from '../components/BeerJSAscii'
-import SlackAscii from '../components/SlackAscii'
-import TiendaAscii from '../components/TiendaAscii'
-import Testimonies from '../components/Testimonies'
-import Modals from '../components/Modals'
+import HuemulAscii from "../components/HuemulAscii";
+import BeerJSAscii from "../components/BeerJSAscii";
+import SlackAscii from "../components/SlackAscii";
+import TiendaAscii from "../components/TiendaAscii";
+import Testimonies from "../components/Testimonies";
+import Modals from "../components/Modals";
 
-import Vue from 'vue'
-import VueTyperPlugin from 'vue-typer'
-import VModal from 'vue-js-modal'
+import Vue from "vue";
+import VueTyperPlugin from "vue-typer";
+import VModal from "vue-js-modal";
 
-Vue.use(VueTyperPlugin)
-Vue.use(VModal)
+Vue.use(VueTyperPlugin);
+Vue.use(VModal);
 
 export default {
-  name: 'Home',
+  name: "Home",
   data() {
-    return {}
+    return {};
   },
   components: {
     HuemulAscii,
@@ -192,7 +221,7 @@ export default {
     SlackAscii,
     TiendaAscii,
     Testimonies,
-    Modals,
+    Modals
   },
   methods: {
     printInConsole() {
@@ -200,37 +229,18 @@ export default {
       const huemulAscii =
         "                                 ;;;;;;   ;;;\n                                 @@@@@@   @@@\n                              ;;;+++@@@;;;+++;;;\n                              @@@;;;@@@@@@;;;@@@\n                              @@@;;;@@@@@@;;;@@@\n                              @@@;;;;;;;;;;;;@@@\n                                 @@@;;;@@@;;;;;;@@@\n                                 @@@;;;@@@;;;;;;@@@\n                                 @@@;;;;;;;;;;;;;;;@@@\n                                 @@@;;;;;;;;;;;;;;;@@@\n   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@;;;;;;;;;;;;;;;@@@@@@\n   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@;;;;;;;;;;;;;;;@@@@@@\n@@@......:;;;;;;;;;;;;;;;;;;;;;;;;;;;@@@@@@@@@\n@@@......:;;;;;;;;;;;;;;;;;;;;;;;;;;;@@@@@@@@@\n   @@@+;;;;;;;;;;;;;;;;;;;;;;;;;;;@@@\n   @@@+;;;;;;;;;;;;;;;;;;;;;;;;;;;@@@\n   @@@+;;;;;;;;;;;;;;;;;;;;;;;;@@@\n   @@@+;;;;;;;;;;;;;;;;;;;;;;;;@@@\n      ;@@+;;;;;;@@@@@@@@@;;;;;;@@@\n      ;@@+;;;;;;@@@@@@@@@;;;;;;@@@\n   @@@+;;;;;;@@@         @@@;;;@@@\n   @@@+;;;;;;@@@         @@@;;;@@@\n   @@@'..'@@@            @@@...@@@\n   @@@'..'@@@            @@@...@@@\n      ;@@;                  @@@\n      ;@@;                  @@@     RIP";
       /* eslint-enable */
-      console.log(huemulAscii)
-    },
+      console.log(huemulAscii);
+    }
   },
-  created: function () {
-    this.printInConsole()
-  },
-}
+  created: function() {
+    this.printInConsole();
+  }
+};
 </script>
 
 <style lang="scss">
-@import '../assets/css/normalize.css';
-@import '../assets/scss/mixins';
-@import '../assets/scss/colors';
-@import '../assets/scss/fonts';
-@import '../assets/scss/variables';
-@import '../assets/scss/components';
-
-html,
-body {
-  min-height: 100%;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
+@import "../assets/css/normalize.min.css";
+@import "../assets/scss/all";
 
 html {
   overflow-x: hidden;
@@ -283,6 +293,7 @@ code {
 
 a {
   color: $link;
+
   &:hover {
     text-decoration: none;
   }
@@ -372,7 +383,6 @@ hr {
       max-width: 50%;
       border-radius: 50%;
       border: 5px solid $font;
-      background-color: #fff;
     }
   }
   .box-testimony {
@@ -391,6 +401,7 @@ hr {
   justify-content: center;
   max-width: 100vw;
   max-height: 100vh;
+  background: url(https://i.imgur.com/AkZ15K5.gif) center center no-repeat;
 
   img {
     display: block;

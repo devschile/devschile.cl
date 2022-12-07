@@ -13,7 +13,7 @@ RUN yarn
 
 # Build assets
 COPY ./ /usr/src/app/
-RUN yarn build
+RUN NODE_ENV=production yarn build
 
 FROM abiosoft/caddy:no-stats
 

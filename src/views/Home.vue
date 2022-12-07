@@ -12,9 +12,7 @@
         </h2>
         <hr />
         <div class="box-btn_inscribete">
-          <button @click.prevent="$modal.show('unete')" class="btn">
-            ¡Únete!
-          </button>
+          <a :href="inviteLink" class="btn">¡Únete!</a>
         </div>
       </div>
     </div>
@@ -213,7 +211,9 @@ Vue.use(VModal);
 export default {
   name: "Home",
   data() {
-    return {};
+    return {
+      inviteLink: process.env.VUE_APP_SLACK_INVITE_LINK,
+    };
   },
   components: {
     HuemulAscii,

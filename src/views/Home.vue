@@ -212,7 +212,8 @@ export default {
   name: "Home",
   data() {
     return {
-      inviteLink: process.env.VUE_APP_SLACK_INVITE_LINK,
+      inviteLink:
+        "https://join.slack.com/t/devschile/shared_invite/zt-1l3wsju9h-cwzlACHkCkSor_mywTsLcw",
     };
   },
   components: {

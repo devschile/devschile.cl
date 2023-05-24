@@ -80,71 +80,68 @@
     </div>
     <hr />
     <div class="row text-center">
-      <div class="column-4">
+      <div class="column-6">
         <h3 id="donations"><span>¡Donaciones!</span></h3>
         <p>
-          Tu donación de <b>$7.500</b> irá en directa mantención de la cuenta
-          del VPS que mantiene a nuestro bot
+          Tu donación de irá en directa mantención de la cuenta del VPS que
+          mantiene a nuestro bot y otros servicios
           <img
             src="https://emoji.slack-edge.com/T0R6F3YAX/devschile/451c6509496ff3b9.png"
             width="20"
-          />. Además te enviaremos
-          <a href="#" @click.prevent="$modal.show('sticker')">stickers</a> y
-          serás miembro gold
+          />. Además serás miembro gold
           <img
-            src="https://emoji.slack-edge.com/T0R6F3YAX/monea/3eff7e75a7a5e8b4.png"
+            src="https://emoji.slack-edge.com/T0R6F3YAX/monea/9251827c776c00c6.gif"
             title="gold"
           />
           por <b>2 meses</b> con múltiples beneficios en la comunidad.
         </p>
-        <a href="https://www.flow.cl/btn.php?token=k2qnq1h" target="_blank">
-          <img src="https://www.flow.cl/img/botones/btn-donar-celeste.png" />
+        <a
+          target="_blank"
+          href="https://app.reveniu.com/checkout-custom-link/X6wYvaeZJ4RDFJFKEF93bTBEUOXhTUVV"
+        >
+          <button
+            style="
+              padding: 0.75rem 32px;
+              color: white;
+              background-color: #336dff;
+              border: 1px solid #336dff;
+              font-size: 16px;
+              border-radius: 5px;
+              width: 109px;
+            "
+          >
+            Donar
+          </button>
         </a>
       </div>
-      <div class="column-4">
-        <h3><span>Impuesto Huemul</span></h3>
-        <p>
-          Cualquier transacción dentro de devsChile merece un pago voluntario
-          por impuesto de timbres y estampillas al cuidado del bot
-          <img
-            src="https://emoji.slack-edge.com/T0R6F3YAX/devschile/451c6509496ff3b9.png"
-            width="20"
-          />: ventas de productos, cambios y ascensos en la pega, etc.
-        </p>
-        <a href="https://www.flow.cl/btn.php?token=gxlhapc" target="_blank">
-          <img src="https://www.flow.cl/img/botones/btn-donar-blanco.png" />
-        </a>
-      </div>
-      <div class="column-4">
+      <div class="column-6">
         <h3><span>Donación por suscripción</span></h3>
         <p>
           Ya podemos crear suscripciones para donaciones mensuales por
-          <b>$3.300</b> y puedes darlo de baja cuando solicites. Si te parece
-          este modo de colaborar a la comunidad escribe un DM a
-          <a href="https://devschile.slack.com/team/U0R6AKR0Q" target="_blank"
-            >@jorgeepunan</a
-          >
-          para agregar tus datos personales para que completes el proceso.
+          <b>$3.500</b> y puedes darlo de baja cuando solicites. Además de ser
+          miembro gold por la duración de tu suscripción, si estás suscrito por
+          3 meses, recibirás
+          <a href="#" @click.prevent="$modal.show('sticker')">stickers</a> de
+          devsChile.
         </p>
-      </div>
-    </div>
-    <hr />
-    <div class="row">
-      <div class="column-6">
-        <div class="text-center">
-          <TiendaAscii />
-        </div>
-      </div>
-      <div class="column-6 gutter-top-xsmall">
-        <div class="vertical-centered-text vertical-middle">
-          <p>
-            Nuestra
-            <a href="https://huemul.tienda/" target="_blank">Tienda Virtual</a>
-            siempre tiene nuevos productos para la comunidad: stickers, pines,
-            tazones. Precios incluyen entrega y el stock va variando según
-            disponibilidad.
-          </p>
-        </div>
+        <a
+          target="_blank"
+          href="https://app.reveniu.com/checkout-custom-link/HoDXmOVFfxFG27ntANhYqZdAEvzovm3G"
+        >
+          <button
+            style="
+              padding: 0.75rem 32px;
+              color: white;
+              background-color: #336dff;
+              border: 1px solid #336dff;
+              font-size: 16px;
+              border-radius: 5px;
+              width: 118px;
+            "
+          >
+            Unirse
+          </button>
+        </a>
       </div>
     </div>
     <hr />
@@ -178,7 +175,6 @@
 import HuemulAscii from "../components/HuemulAscii";
 import BeerJSAscii from "../components/BeerJSAscii";
 import SlackAscii from "../components/SlackAscii";
-import TiendaAscii from "../components/TiendaAscii";
 import Testimonies from "../components/Testimonies";
 import Modals from "../components/Modals";
 
@@ -201,9 +197,8 @@ export default {
     HuemulAscii,
     BeerJSAscii,
     SlackAscii,
-    TiendaAscii,
     Testimonies,
-    Modals
+    Modals,
   },
   methods: {
     printInConsole() {
@@ -212,11 +207,11 @@ export default {
         "                                 ;;;;;;   ;;;\n                                 @@@@@@   @@@\n                              ;;;+++@@@;;;+++;;;\n                              @@@;;;@@@@@@;;;@@@\n                              @@@;;;@@@@@@;;;@@@\n                              @@@;;;;;;;;;;;;@@@\n                                 @@@;;;@@@;;;;;;@@@\n                                 @@@;;;@@@;;;;;;@@@\n                                 @@@;;;;;;;;;;;;;;;@@@\n                                 @@@;;;;;;;;;;;;;;;@@@\n   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@;;;;;;;;;;;;;;;@@@@@@\n   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@;;;;;;;;;;;;;;;@@@@@@\n@@@......:;;;;;;;;;;;;;;;;;;;;;;;;;;;@@@@@@@@@\n@@@......:;;;;;;;;;;;;;;;;;;;;;;;;;;;@@@@@@@@@\n   @@@+;;;;;;;;;;;;;;;;;;;;;;;;;;;@@@\n   @@@+;;;;;;;;;;;;;;;;;;;;;;;;;;;@@@\n   @@@+;;;;;;;;;;;;;;;;;;;;;;;;@@@\n   @@@+;;;;;;;;;;;;;;;;;;;;;;;;@@@\n      ;@@+;;;;;;@@@@@@@@@;;;;;;@@@\n      ;@@+;;;;;;@@@@@@@@@;;;;;;@@@\n   @@@+;;;;;;@@@         @@@;;;@@@\n   @@@+;;;;;;@@@         @@@;;;@@@\n   @@@'..'@@@            @@@...@@@\n   @@@'..'@@@            @@@...@@@\n      ;@@;                  @@@\n      ;@@;                  @@@     RIP";
       /* eslint-enable */
       console.log(huemulAscii);
-    }
+    },
   },
-  created: function() {
+  created: function () {
     this.printInConsole();
-  }
+  },
 };
 </script>
 

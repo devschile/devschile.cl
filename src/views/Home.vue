@@ -38,25 +38,6 @@
     </div>
     <hr />
     <div class="row">
-      <div class="column-8 column-offset-2 column-center text-center">
-        <h3><span>Auspiciador</span></h3>
-        <a href="https://boolean.cl/" target="_blank">
-          <img
-            src="https://i.imgur.com/qlL6OFG.png"
-            alt="Academia de Programación Boolean"
-            width="300"
-          />
-        </a>
-        <p><em>Porque juntos somos más</em></p>
-        <p>
-          <b>¡Academia de Programación Boolean auspicia devsChile!</b> Para que
-          entre todos aprendamos y compartamos conocimientos juntos ❤️<br />
-          Somos más, somos comunidad.
-        </p>
-      </div>
-    </div>
-    <hr />
-    <div class="row">
       <div class="column-4 column-push-2 gutter-top-xsmall">
         <div class="vertical-centered-text vertical-tall">
           <p>

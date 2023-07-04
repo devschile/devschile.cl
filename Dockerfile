@@ -4,9 +4,6 @@ ENV NODE_ENV development
 
 WORKDIR /usr/src/app
 
-# Install vue-cli
-RUN npm i -g @vue/cli
-
 # Install npm dependencies
 COPY ./package.json ./yarn.* /usr/src/app/
 RUN yarn

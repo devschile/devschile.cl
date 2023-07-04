@@ -4,6 +4,8 @@ gzip
 log stdout
 errors stdout
 
+header @html Cache-Control no-store
+
 rewrite {
     regexp .*
     to {path} /

@@ -1,4 +1,4 @@
-FROM node:lts-alpine as builder
+FROM node:current-alpine as builder
 
 ENV NODE_ENV development
 

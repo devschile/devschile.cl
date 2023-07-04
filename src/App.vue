@@ -39,8 +39,39 @@ const inviteLink = 'https://join.slack.com/t/devschile/shared_invite/zt-1l3wsju9
       </div>
     </div>
     <hr class="my-8 opacity-20">
-    <div class="grid md:grid-cols-12">
-      <div class="row-start-2 flex items-center justify-center text-left font-mono leading-tight md:col-span-3 md:col-start-3 md:row-auto">
+    <div class="grid gap-16 md:grid-cols-2">
+      <div class="flex flex-col gap-4">
+        <h2
+          class="mb-6 text-2xl text-white"
+        >
+          <span class="border-b border-white px-3 py-1">¡devsChile y Coderhouse potencian tu talento!</span>
+        </h2>
+        <p>
+          <b>devsChile</b> y <b>Coderhouse</b> se unen para prepararte para tu próximo
+          desafío profesional.
+        </p>
+        <p>
+          <b>devsChile</b> te regala un <b>20% de descuento</b> en todos los cursos de
+          <b>Coderhouse</b> con el código <b>HUEMULCODE</b>.
+        </p>
+        <p>
+          <a
+            href="https://www.coderhouse.cl/alianzas/devschile?utm_source=devschile&utm_medium=alianzas&utm_campaign="
+            target="_blank"
+            class="text-teal-400 underline"
+          >
+            ¡Aprovecha ahora!
+          </a>
+        </p>
+      </div>
+      <div class="flex items-center justify-center">
+        <img src="/coderhouse.png">
+      </div>
+    </div>
+    <hr class="my-8 opacity-20">
+    <div class="grid gap-16 md:grid-cols-12">
+      <BeerJSAscii class="mb-4 md:col-span-6 md:mb-0" />
+      <div class="flex items-center justify-center text-left font-mono leading-tight md:col-span-4 md:col-start-8">
         <p>
           <b>devsChile</b> hospeda a los organizadores del famoso evento
           <a
@@ -51,12 +82,10 @@ const inviteLink = 'https://join.slack.com/t/devschile/shared_invite/zt-1l3wsju9
           y de poder inscribirse 1 dia antes que por otros medios.
         </p>
       </div>
-      <BeerJSAscii class="row-start-1 mb-4 md:col-span-6 md:col-start-7 md:mb-0" />
     </div>
     <hr class="my-8 opacity-20">
-    <div class="grid md:grid-cols-12">
-      <HuemulAscii class="mb-4 md:col-span-6 md:mb-0" />
-      <div class="flex items-center justify-center text-left font-mono leading-tight md:col-span-4 md:col-start-8">
+    <div class="grid gap-16 md:grid-cols-12">
+      <div class="flex items-center justify-center text-left font-mono leading-tight md:col-span-4 md:col-start-2">
         <p>
           Tenemos al mejor <i>Hubot</i> de todos los Slacks:
           <a
@@ -73,9 +102,12 @@ const inviteLink = 'https://join.slack.com/t/devschile/shared_invite/zt-1l3wsju9
           >#huemul-devs</a>.
         </p>
       </div>
+      <div class="mb-4 md:col-span-6 md:col-start-7 md:mb-0">
+        <HuemulAscii />
+      </div>
     </div>
     <hr class="my-8 opacity-20">
-    <div class="grid md:grid-cols-2">
+    <div class="grid gap-16 md:grid-cols-2">
       <div>
         <h2
           id="donations"

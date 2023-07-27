@@ -17,13 +17,13 @@ const inviteLink = 'https://join.slack.com/t/devschile/shared_invite/zt-1l3wsju9
     </h1>
     <p>Los mejores devs de Chile</p>
     <hr class="my-8 opacity-20">
-    <button
+    <a
       class="mb-16 mt-8 bg-teal-400 px-4 py-2 text-xl uppercase text-white"
       style="text-shadow: 1px 1px #555"
       :href="inviteLink"
     >
       ¡Únete!
-    </button>
+    </a>
     <div class="grid md:grid-cols-12">
       <SlackAscii class="mb-4 md:col-span-6 md:mb-0" />
       <div class="flex items-center justify-center text-left font-mono leading-tight md:col-span-4 md:col-start-8">

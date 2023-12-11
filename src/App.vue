@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import {ref} from 'vue';
+import { ref } from 'vue';
 import SlackAscii from './components/SlackAscii.vue';
 import BeerJSAscii from './components/BeerJSAscii.vue';
 import HuemulAscii from './components/HuemulAscii.vue';
 import Testimonies from './components/Testimonies.vue';
-import {Dialog, DialogPanel} from '@headlessui/vue';
+import { Dialog, DialogPanel } from '@headlessui/vue';
 
 const isStickersOpen = ref(false);
-const inviteLink = 'https://join.slack.com/t/devschile/shared_invite/zt-1l3wsju9h-cwzlACHkCkSor_mywTsLcw';
+const inviteLink = 'https://join.slack.com/t/devschile/shared_invite/zt-28po3lsc2-XZd7gJzd_sKl6RJqnYqFkw';
 </script>
 
 <template>

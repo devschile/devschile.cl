@@ -7,7 +7,7 @@ import Testimonies from './components/Testimonies.vue';
 import { Dialog, DialogPanel } from '@headlessui/vue';
 
 const isStickersOpen = ref(false);
-const inviteLink = 'https://join.slack.com/t/devschile/shared_invite/zt-28po3lsc2-XZd7gJzd_sKl6RJqnYqFkw';
+const inviteLink = import.meta.env.VITE_SLACK_INVITE_LINK;
 </script>
 
 <template>

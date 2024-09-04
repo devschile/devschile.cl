@@ -79,13 +79,13 @@ const selectedTestimonies = Array.from(uniqueTestimonies);
 <template>
   <div>
     <h2
-      class="mb-6 text-2xl text-white"
+      class="mb-6 text-3xl text-white"
     >
-      <span class="border-b border-white px-3 py-1">Testimonios</span>
+      <span class="border-b border-white px-3 py-1 inline-block mb-4">Testimonios</span>
     </h2>
     <div
       v-if="selectedTestimonies.length > 0"
-      class="grid grid-cols-4 font-mono"
+      class="grid gap-x-4 grid-cols-4 font-mono"
     >
       <div
         v-for="(item, idx) in selectedTestimonies"
@@ -94,9 +94,9 @@ const selectedTestimonies = Array.from(uniqueTestimonies);
         <img
           :src="`/${item.image}`"
           :alt="item.name"
-          class="mx-auto mb-4 max-w-[50%] rounded-full border-4 border-white"
+          class="mx-auto mb-8 max-w-[50%] rounded-full border-4 border-white"
         >
-        <p>
+        <p class="text-sm">
           <span class="font-bold">{{ item.name }}</span>: <i>"{{ item.testimony }}"</i>
         </p>
       </div>

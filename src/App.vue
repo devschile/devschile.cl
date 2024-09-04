@@ -15,18 +15,11 @@ const inviteLink = 'https://join.slack.com/t/devschile/shared_invite/zt-1l3wsju9
     <h1 class="mb-4 text-4xl text-white">
       devsChile
     </h1>
-    <p>Los mejores devs de Chile</p>
+    <p>Los mejores devs de Chile juntos en Slack</p>
     <hr class="my-8 opacity-20">
-    <a
-      class="mb-16 mt-8 bg-teal-400 px-4 py-2 text-xl uppercase text-white"
-      style="text-shadow: 1px 1px #555"
-      :href="inviteLink"
-    >
-      ¡Únete!
-    </a>
-    <div class="grid md:grid-cols-12">
-      <SlackAscii class="mb-4 md:col-span-6 md:mb-0" />
-      <div class="flex items-center justify-center text-left font-mono leading-tight md:col-span-4 md:col-start-8">
+    
+    <div class="grid gap-16 md:grid-cols-12 mt-8">
+      <div class="flex items-center justify-center text-left font-mono leading-tight md:col-span-4 md:col-start-2 flex-col">
         <p>
           <b>devsChile</b> es más que un grupo de Slack: es una comunidad de
           diseñadores y desarrolladores web que se juntan a comentar, ayudar,
@@ -36,36 +29,18 @@ const inviteLink = 'https://join.slack.com/t/devschile/shared_invite/zt-1l3wsju9
           algunos de los que puedes ingresar, aportar y hasta procrastinar un
           rato mientras dure tu <i>Pomodoro</i>.
         </p>
-      </div>
-    </div>
-    <hr class="my-8 opacity-20">
-    <div class="grid gap-16 md:grid-cols-2">
-      <div class="flex flex-col gap-4">
-        <h2
-          class="mb-6 text-2xl text-white"
-        >
-          <span class="border-b border-white px-3 py-1">¡devsChile y Coderhouse potencian tu talento!</span>
-        </h2>
-        <p>
-          <b>devsChile</b> y <b>Coderhouse</b> se unen para prepararte para tu próximo
-          desafío profesional.
-        </p>
-        <p>
-          <b>devsChile</b> te regala un <b>20% de descuento</b> en todos los cursos de
-          <b>Coderhouse</b> con el código <b>HUEMULCODE</b>.
-        </p>
         <p>
           <a
-            href="https://www.coderhouse.cl/alianzas/devschile?utm_source=devschile&utm_medium=alianzas&utm_campaign="
-            target="_blank"
-            class="text-teal-400 underline"
+            class="mb-8 mt-8 bg-teal-400 text-xl uppercase text-white inline-block"
+            style="text-shadow: 1px 1px #555; padding: 1rem 2rem;"
+            :href="inviteLink"
           >
-            ¡Aprovecha ahora!
+            ¡Únete!
           </a>
         </p>
-      </div>
-      <div class="flex items-center justify-center">
-        <img src="/coderhouse.png">
+    </div>
+      <div class="mb-4 md:col-span-6 md:col-start-7 md:mb-0">
+        <SlackAscii class="mb-4 md:col-span-6 md:mb-0" />
       </div>
     </div>
     <hr class="my-8 opacity-20">
@@ -131,13 +106,12 @@ const inviteLink = 'https://join.slack.com/t/devschile/shared_invite/zt-1l3wsju9
           por <b>2 meses</b> con múltiples beneficios en la comunidad.
         </p>
         <a
+          class="bg-teal-400 px-4 py-2 text-xl uppercase text-white inline-block"
           target="_blank"
           href="https://app.reveniu.com/checkout-custom-link/X6wYvaeZJ4RDFJFKEF93bTBEUOXhTUVV"
+          style="text-shadow: 1px 1px #555; padding: 1rem 2rem;"
         >
-          <!-- eslint-disable-next-line tailwindcss/no-custom-classname -->
-          <button class="reveniu-button">
-            Donar
-          </button>
+          Donar
         </a>
       </div>
       <div>
@@ -146,7 +120,7 @@ const inviteLink = 'https://join.slack.com/t/devschile/shared_invite/zt-1l3wsju9
         </h3>
         <p class="mb-4">
           Ya podemos crear suscripciones para donaciones mensuales por
-          <b>$3.500</b> y puedes darlo de baja cuando solicites. Además de ser
+          <b>$3.500</b> y puedes darlo de baja cuando quieras. Además de ser
           miembro gold por la duración de tu suscripción, si estás suscrito por
           3 meses, recibirás
           <button
@@ -159,20 +133,19 @@ const inviteLink = 'https://join.slack.com/t/devschile/shared_invite/zt-1l3wsju9
           devsChile.
         </p>
         <a
+          class="bg-teal-400 px-4 py-2 text-xl uppercase text-white inline-block"
           target="_blank"
           href="https://app.reveniu.com/checkout-custom-link/HoDXmOVFfxFG27ntANhYqZdAEvzovm3G"
+          style="text-shadow: 1px 1px #555; padding: 1rem 2rem;"
         >
-          <!-- eslint-disable-next-line tailwindcss/no-custom-classname -->
-          <button class="reveniu-button">
-            Unirse
-          </button>
+          Unirse
         </a>
       </div>
     </div>
     <hr class="my-8 opacity-20">
     <Testimonies />
     <hr class="my-8 opacity-20">
-    <div class="text-center font-mono">
+    <div class="text-center font-mono text-sm">
       © Copyright 2016 ~ {{ new Date().getFullYear() }}
       <a
         href="https://github.com/orgs/devschile/teams/org/members"

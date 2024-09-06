@@ -9,7 +9,7 @@ export default {
       fontFamily: {
         body: ["Fira Sans", "Droid Sans", "Helvetica Neue", "sans-serif"],
         mono: ["Incosolata", "monospace"]
-      }
+      },
     },
   },
   plugins: [],

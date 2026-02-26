@@ -17,7 +17,7 @@ const inviteLink = import.meta.env.VITE_SLACK_INVITE_LINK;
     </h1>
     <p>Los mejores devs de Chile juntos en Slack</p>
     <hr class="my-8 opacity-20">
-    
+
     <div class="grid gap-16 md:grid-cols-12 mt-8">
       <div class="flex items-center justify-center text-left font-mono leading-tight md:col-span-4 md:col-start-2 flex-col">
         <p>
@@ -54,7 +54,7 @@ const inviteLink = import.meta.env.VITE_SLACK_INVITE_LINK;
             href="https://www.beerjs.cl/"
           >BeerJS</a>, y sus usuarios siempre
           son privilegiados con el primer anuncio oficial de una nueva edición
-          y de poder inscribirse 1 dia antes que por otros medios.
+          y de poder inscribirse 1 día antes que por otros medios.
         </p>
       </div>
     </div>
@@ -88,22 +88,32 @@ const inviteLink = import.meta.env.VITE_SLACK_INVITE_LINK;
           id="donations"
           class="mb-6 text-2xl text-white"
         >
-          <span class="border-b border-white px-3 py-1">¡Donaciones!</span>
+          <span class="border-b border-white px-3 py-1">¡Únete a los gold!</span>
         </h2>
         <p class="mb-4">
-          Tu donación de irá en directa mantención de la cuenta del VPS que
-          mantiene a nuestro bot y otros servicios
+          Suscríbete a <strong>devsChile gold</strong> para apoyar las iniciativas de la comunidad y obtener beneficios que pronto anunciaremos.
           <img
             src="/huemul.png"
             width="20"
             class="inline-block"
-          >. Además serás miembro gold
-          <img
-            src="/gold.gif"
-            title="gold"
-            class="inline-block"
-          >
-          por <b>2 meses</b> con múltiples beneficios en la comunidad.
+          ><br>La suscripción tiene un costo de $4.000 de forma recurrente mensual.
+        </p>
+        <a
+          class="bg-teal-400 px-4 py-2 text-xl uppercase text-white inline-block"
+          target="_blank"
+          href="https://app.reveniu.com/checkout-custom-link/9VamNpRD9b0LNZ3N4NAl2MG5TyY98zln"
+          style="text-shadow: 1px 1px #555; padding: 1rem 2rem;"
+        >
+          Suscribirse
+        </a>
+      </div>
+      <div>
+        <h3 class="mb-6 text-2xl text-white">
+          <span class="border-b border-white px-3 py-1">Suscripción no recurrente</span>
+        </h3>
+        <p class="mb-4">
+          Si no quieres el compromiso recurrente, puedes suscribirte por un pago único de
+          <b>$4.000</b>. Además de ser miembro gold por la duración de tu suscripción, tendrás acceso a beneficios por definir y otras sorpresas.
         </p>
         <a
           class="bg-teal-400 px-4 py-2 text-xl uppercase text-white inline-block"
@@ -111,36 +121,16 @@ const inviteLink = import.meta.env.VITE_SLACK_INVITE_LINK;
           href="https://app.reveniu.com/checkout-custom-link/X6wYvaeZJ4RDFJFKEF93bTBEUOXhTUVV"
           style="text-shadow: 1px 1px #555; padding: 1rem 2rem;"
         >
-          Donar
+          Quiero ser gold
         </a>
       </div>
-      <div>
-        <h3 class="mb-6 text-2xl text-white">
-          <span class="border-b border-white px-3 py-1">Donación por suscripción</span>
-        </h3>
-        <p class="mb-4">
-          Ya podemos crear suscripciones para donaciones mensuales por
-          <b>$3.500</b> y puedes darlo de baja cuando quieras. Además de ser
-          miembro gold por la duración de tu suscripción, si estás suscrito por
-          3 meses, recibirás
-          <button
-            type="button"
-            class="text-teal-400 underline"
-            @click="isStickersOpen = true"
-          >
-            stickers
-          </button> de
-          devsChile.
-        </p>
-        <a
-          class="bg-teal-400 px-4 py-2 text-xl uppercase text-white inline-block"
-          target="_blank"
-          href="https://app.reveniu.com/checkout-custom-link/HoDXmOVFfxFG27ntANhYqZdAEvzovm3G"
-          style="text-shadow: 1px 1px #555; padding: 1rem 2rem;"
-        >
-          Unirse
-        </a>
-      </div>
+    </div>
+    <hr class="my-8 opacity-20">
+    <div class="grid gap-16 md:grid-cols-1 text-center">
+      <span>
+      Recibimos los pagos mediante <a href="https://reveniu.com/" target="_blank">Reveniu</a>
+
+      </span>
     </div>
     <hr class="my-8 opacity-20">
     <Testimonies />

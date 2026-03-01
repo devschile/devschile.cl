@@ -53,8 +53,8 @@ const inviteLink = import.meta.env.VITE_SLACK_INVITE_LINK;
             class="text-teal-400 underline"
             href="https://www.beerjs.cl/"
           >BeerJS</a>, y sus usuarios siempre
-          son privilegiados con el primer anuncio oficial de una nueva edición
-          y de poder inscribirse 1 día antes que por otros medios.
+          son privilegiados con el primer anuncio oficial de una nueva edición,
+          además de poder inscribirse 1 día antes que por otros medios.
         </p>
       </div>
     </div>
@@ -62,12 +62,12 @@ const inviteLink = import.meta.env.VITE_SLACK_INVITE_LINK;
     <div class="grid gap-16 md:grid-cols-12">
       <div class="flex items-center justify-center text-left font-mono leading-tight md:col-span-4 md:col-start-2">
         <p>
-          Tenemos al mejor <i>Hubot</i> de todos los Slacks:
+          Tenemos al mejor <i>bot</i> de todos los Slacks:
           <a
             href="https://github.com/devschile/huemul"
             class="text-teal-400 underline"
             target="_blank"
-          >Huemul</a>
+          >Huemul</a>,
           nos acompaña todos los días y su grupo de apoyo no se cansa de
           hacerle mejoras. Únete y conócelo, crea nuevas funcionalidades y
           apóyanos en su desarrollo en el canal
@@ -113,7 +113,7 @@ const inviteLink = import.meta.env.VITE_SLACK_INVITE_LINK;
         </h3>
         <p class="mb-4">
           Si no quieres el compromiso recurrente, puedes suscribirte por un pago único de
-          <b>$4.000</b>. Además de ser miembro gold por la duración de tu suscripción, tendrás acceso a beneficios por definir y otras sorpresas.
+          <b>$4.000</b>. Además de ser miembro gold por la duración de tu suscripción, tendrás acceso a beneficios exclusivos y otras sorpresas.
         </p>
         <a
           class="bg-teal-400 px-4 py-2 text-xl uppercase text-white inline-block"
@@ -128,8 +128,7 @@ const inviteLink = import.meta.env.VITE_SLACK_INVITE_LINK;
     <hr class="my-8 opacity-20">
     <div class="grid gap-16 md:grid-cols-1 text-center">
       <span>
-      Recibimos los pagos mediante <a href="https://reveniu.com/" target="_blank">Reveniu</a>
-
+      Los pagos son facilitados por <a href="https://reveniu.com/" target="_blank">Reveniu</a> ♥️
       </span>
     </div>
     <hr class="my-8 opacity-20">

@@ -118,7 +118,7 @@ const inviteLink = import.meta.env.VITE_SLACK_INVITE_LINK;
         <a
           class="bg-teal-400 px-4 py-2 text-xl uppercase text-white inline-block"
           target="_blank"
-          href="https://app.reveniu.com/checkout-custom-link/X6wYvaeZJ4RDFJFKEF93bTBEUOXhTUVV"
+          href="https://gold.devschile.cl"
           style="text-shadow: 1px 1px #555; padding: 1rem 2rem;"
         >
           Quiero ser gold
@@ -128,7 +128,11 @@ const inviteLink = import.meta.env.VITE_SLACK_INVITE_LINK;
     <hr class="my-8 opacity-20">
     <div class="grid gap-16 md:grid-cols-1 text-center">
       <span>
-      Los pagos son facilitados por <a href="https://reveniu.com/" target="_blank">Reveniu</a> ♥️
+        ¿Ya eres gold? Administra tu membresía en
+        <a href="https://gold.devschile.cl" target="_blank" class="underline">gold.devschile.cl</a>.
+      </span>
+      <span>
+      Los pagos son facilitados por <a href="https://reveniu.com/" target="_blank">Reveniu</a> y <a href="https://www.mercadopago.cl/" target="_blank">MercadoPago</a> ♥️
       </span>
     </div>
     <hr class="my-8 opacity-20">

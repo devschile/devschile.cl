@@ -5,6 +5,7 @@ import BeerJSAscii from './components/BeerJSAscii.vue';
 import HuemulAscii from './components/HuemulAscii.vue';
 import Testimonies from './components/Testimonies.vue';
 import { Dialog, DialogPanel } from '@headlessui/vue';
+import { capture } from './lib/posthog';
 
 const isStickersOpen = ref(false);
 const inviteLink = import.meta.env.VITE_SLACK_INVITE_LINK;
@@ -34,6 +35,7 @@ const inviteLink = import.meta.env.VITE_SLACK_INVITE_LINK;
             class="mb-8 mt-8 bg-teal-400 text-xl uppercase text-white inline-block"
             style="text-shadow: 1px 1px #555; padding: 1rem 2rem;"
             :href="inviteLink"
+            @click="capture('slack_invite_clicked')"
           >
             ¡Únete!
           </a>
@@ -103,6 +105,7 @@ const inviteLink = import.meta.env.VITE_SLACK_INVITE_LINK;
           target="_blank"
           href="https://app.reveniu.com/checkout-custom-link/9VamNpRD9b0LNZ3N4NAl2MG5TyY98zln"
           style="text-shadow: 1px 1px #555; padding: 1rem 2rem;"
+          @click="capture('gold_checkout_started', { plan: 'recurrente', provider: 'reveniu' })"
         >
           Suscribirse
         </a>
@@ -120,6 +123,7 @@ const inviteLink = import.meta.env.VITE_SLACK_INVITE_LINK;
           target="_blank"
           href="https://gold.devschile.cl"
           style="text-shadow: 1px 1px #555; padding: 1rem 2rem;"
+          @click="capture('gold_checkout_started', { plan: 'pago-unico', provider: 'gold-devschile' })"
         >
           Quiero ser gold
         </a>
